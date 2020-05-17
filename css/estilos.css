@@ -8,32 +8,40 @@
 body {
     font-family: "verdana";
     margin: 0 auto;
-    max-width: 900px;
+    background-color: #C5CCD0;
 }
 header {
-    background-color: yellow;
+    background-color: #797E89;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    height:80px;
+    justify-content: space-around;
+    height: 100px;
 }
 h1 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 70px;
+    color: #2D3142;
+    font-size: 60px;
+    padding-bottom: 30px;
 }
 footer {
-    background-color: yellow;
+    background-color: #2D3142;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    color: #FAFFFD;
 }
-#logo{
+#logo {
     width: 200px;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: helvetica;
+    color: #2D3142;
 }
-
 #buscador-header {
     height: 50px;
     width: 100%;
@@ -43,29 +51,48 @@ footer {
     position: relative;
     padding: 10px;
 }
-.contenedor-boton{
+.contenedor-boton {
     position: absolute;
     top: 10px;
     right: 10px;
 }
-
 #boton-buscar {
-    background-color: red;
+    background-color: #2D3142;
     width: 50px;
     height: 50px;
-     border:0;
+    border: 0;
 }
 #lupa {
     font-size: 20px;
-    color: lawngreen;
+    color: #FAFFFD;
+}
+.menu-header {
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #2D3142;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-header ul {
+    list-style: none;
+    text-align: center;
+}
+.menu-header li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.menu-header a {
+    text-decoration: none;
+    color: #FAFFFD;
 }
 .contenedor-slider {
-    background-color: aquamarine;
     margin-top: 10px;
 }
 .contenedor-slider img {
-    width: 900px;
-    height: 318px;
+    width: 100%;
+    height: 600px;
 }
 .contenedor-central {
     display: flex;
@@ -74,26 +101,45 @@ footer {
     justify-content: space-around;
     padding-top: 40px;
     margin: 0 auto;
-    background-color: red;
+    padding-bottom: 100px;
 }
 .circulos {
-    background-color: blueviolet;
+    background-color: #464B5A;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin: 0 auto;
 }
+#enfermedades {
+    font-size: 80px;
+    padding-left: 25px;
+    padding-top: 30px;
+    color: #FAFFFD;
+}
+#jeringa {
+    font-size: 100px;
+    padding-left: 25px;
+    padding-top: 20px;
+    color: #FAFFFD;
+    ;
+}
+#gps {
+    font-size: 80px;
+    padding-left: 45px;
+    padding-top: 30px;
+    color: #FAFFFD;
+}
 .links {
     text-decoration: none;
-    background-color: aqua;
-    padding: 5px 50px 10px;
-    border: 2px solid black;
+    background-color: #464B5A;
+    color: #FAFFFD;
+    padding: 10px 50px 10px;
     border-radius: 5px;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .franja-llamado {
-    background-color: violet;
+    background-color: #1C1F32;
     height: 200px;
     margin-top: 40px;
     display: flex;
@@ -102,29 +148,31 @@ footer {
     margin-bottom: 15px;
 }
 .contenedor-izquierdo {
-    margin: 0 auto;
-    text-align: center;
+    margin-left: 100px;
 }
 #parrafo-1 {
     padding-top: 20px;
     font-size: 18px;
+    color: #C5CCD0;
 }
 #parrafo-2 {
     padding-top: 10px;
     font-size: 55px;
     font-weight: bolder;
+    color: #C5CCD0;
 }
 .contenedor-derecho {
-    margin-right: 50px;
+    margin-right: 120px;
 }
 #telefono {
-    color: white;
+    color: #C5CCD0;
     font-size: 100px;
     padding-right: 20px;
 }
 #numero {
     font-size: 100px;
     font-weight: bolder;
+    color: #C5CCD0;
 }
 #subtitulo-izquierdo {
     padding-bottom: 10px;
@@ -132,23 +180,345 @@ footer {
 #subtitulo-central {
     padding-top: 25px;
 }
-#menu li {
+.menu-footer li {
     list-style: none;
 }
-#menu a {
+.menu-footer a {
     text-decoration: none;
-        color: black;
+    color: #FAFFFD;
 }
 #redes-sociales {
     display: flex;
     padding-top: 5px;
-    }
-#redes-sociales div{
+}
+#redes-sociales div {
     padding-left: 10px;
-    
 }
 #redes-sociales div a img {
-     width: 50px;
-     height: 50px;
-}    
+    width: 50px;
+    height: 50px;
+}
 
+/*Enfermedades*/
+
+#titulo-enfermedad {
+    text-align: center;
+}
+#contenedor-buscador-enfermedades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.barra-de-busqueda {
+    position: relative;
+    height: 50px;
+    width: 50%;
+    left: 300px;
+}
+#buscador-enfermedades {
+    width: 100%;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.contenedor-icono {
+    position: relative;
+    right: 1100px;
+    height: 35px;
+    top: 10px;
+}
+#lupa-enfermedad {
+    font-size: 30px;
+    color: #797E89;
+    opacity: 0.3;
+}
+.contenedor-listaEnfermedades {
+    display: flex;
+    height: 1400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Al utilizar flex, el article se transforma en padre para la img,p etc*/
+
+.articulos {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+.articulos img {
+    height: 200px;
+    width: 20%;
+    border-radius: 20px;
+}
+.informacion {
+    width: 30%;
+    margin-left: 30px;
+    /*Utilizar color para diferenciarlo*/
+}
+.informacion .titulo-enfermedad {
+    padding: 10px 1px 20px 20px;
+    font-size: 30px;
+}
+.informacion p {
+    padding-left: 20px;
+}
+.informacion input {
+    padding: 10px;
+    margin-top: 90px;
+    margin-left: 20px;
+    color: #FAFFFD;
+    background-color: #2D3142;
+    border: 2px solid #2D3142;
+    border-radius: 10px;
+    width: 25%;
+    cursor: pointer;
+}
+
+/*Detalle de enfermedadaes*/
+
+.contenedor-enfermedad {
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: red;
+}
+#nombre-enfermedad {
+    font-size: 25px;
+    position: relative;
+    bottom: 15px;
+}
+.articulo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+}
+.articulo img {
+    height: 200px;
+    width: 20%;
+    border-radius: 20px;
+}
+.descripcion {
+    width: 30%;
+    margin-left: 30px;
+}
+#titulo {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contenedor-texto {
+    width: 45%;
+}
+.contenedor-texto p {
+    margin: 20px 0;
+}
+#titulo-sintoma {
+    padding-left: 20px;
+}
+
+/*Pongo display flex para que el articulo que se encuentra abajo,
+se posicione a la derecha*/
+
+#contenedor-article {
+    display: flex;
+}
+.article-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.article-right {
+  
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.article-right p {
+    margin: 20px 0;
+}
+.article-right form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+#nombre-apellido {
+    width: 100%;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.contenedor-dni-telefono {
+    margin-top: 20px;
+    display: flex;
+    height: 60px;
+}
+.contenedor-dni-telefono input {
+    margin: 10px 0 0 5px;
+    height: 35px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 90%
+}
+.contenedor-dni-telefono #celular {
+    margin-left: 20px;
+}
+.contenedor-ciudad-sexo {
+    display: flex;
+    margin: 20px 0;
+}
+.contenedor-ciudad-sexo #ciudad {
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    width: 90%;
+}
+#opciones {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+.contenedor-paises {
+    margin: 10px 0 20px 0;
+}
+.titulo-sintomas {
+    margin: 10px 0;
+    padding: 10px;
+}
+.contenedor-direccion-localidad {
+    margin-bottom: 10px;
+    display: flex;
+}
+.contenedor-direccion-localidad input {
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 90%;
+}
+.contenedor-enviar-test {
+    position: relative;
+    left: 400px;
+}
+#button-send {
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+/*Mapa*/
+
+#titulo-mapa {
+    font-size: 25px;
+    text-align: center;
+    padding: 40px;
+    color: #FAFFFD;
+    /*color:#2D3142;*/
+}
+.seccion-mapa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contenedor-mapa {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#contenedor-mapa iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/*Contacto*/
+
+#contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contacto {
+    padding-left: 20px;
+    width: 30%;
+    color: #2D3142;
+}
+#titulo-contacto {
+    padding-top: 30px;
+}
+#contenedor-formulario .input {
+    display: block;
+}
+.input {
+    width: 90%;
+    margin: 20px 0;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#contenedor-formulario textarea {
+    border: 1px solid grey;
+    width: 90%;
+    border-radius: 10px;
+}
+#button {
+    background-color: #2D3142;
+    width: 15%;
+    height: 30px;
+    color: #FAFFFD;
+    border: #3580D2;
+    border-radius: 10px;
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #464B5A;
+    transition: 1s;
+}
+#datos-contacto {
+    position: relative;
+    top: 40px;
+    right: 500px;
+    color: #2D3142;
+}
+#redes-sociales-contacto div {
+    display: inline-block;
+}
+#redes-sociales-contacto div a img {
+    width: 50px;
+}
+#titulo-ubicacion {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px 20px 0;
+    color: #2D3142;
+}
+#contenedor-ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#ubicacion {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+#ubicacion iframe {
+    width: 100%;
+    height: 500px;
+}

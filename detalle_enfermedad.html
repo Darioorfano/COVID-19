@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>COVID-19 Detalles-Enfermedad</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <p class="logo">LOGO</p>
+        </div>
+
+        <div class="contenedor-buscador">
+
+            <div class="barra de busqueda">
+                <datalist id="buscador">
+                    <option value="Enfermedad1">
+                        <option value="Enfermedad2">
+                            <option value="Enfermedad3">
+                                <option value="Enfermedad4">
+                                    <option value="Enfermedad5">
+                </datalist>
+                <input type="text" list="buscador" id="buscador-header" />
+
+            </div>
+            <div class="contenedor-boton">
+                <button id="boton-buscar">
+                    <i class="fas fa-search" id="lupa"></i>
+
+                </button>
+            </div>
+        </div>
+        <nav class="menu-header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="enfermedades.html">Enfermedades</a></li>
+                <li><a href="#">Vacunacion</a></li>
+                <li><a href="mapa_hospitales.html">Hospitales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+
+        <section class="contenedor-enfermedad">
+
+            <h1 id="nombre-enfermedad">Nombre Enfermedad</h1>
+            <article class="articulo">
+
+                <img src="img/virus1.jfif" alt="Virus1">
+                <!-- Este div se encuentra separado de la imagen-->
+                <div class="descripcion">
+                    <p>Descripcion</p>
+
+                </div>
+            </article>
+
+        </section>
+
+        <section class="seccion-test">
+
+            <p id="titulo">FORMULARIO DE DETECCI&Oacute;N(TEST)DE CORONAVIRUS(COVID 19)</p>
+
+
+
+            <div id="contenedor-article">
+                <!--Creo este div contenedor para poder aplicarle flex-wrap:wrap de un lado, y column del otro-->
+
+
+                <article class="article-left">
+                    <div class="contenedor-texto">
+                        <p>Hola usuario! Si tienes sintomas de XXXX o has estado en contacto con una persona afectada deberias hacer un control y seguimiento diario de tus sintomas.</p>
+                        <p>Esta aplicacion te permitira hacer un seguimiento de la evolucion de los sintomas y te dara las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptacion de los terminos y la politica de privacidad descritos en <a href="#">Ver las condiciones y politicas</a></p>
+                    </div>
+
+
+                    <div class="imagenes">
+                        <p id="titulo-sintoma">SINTOMAS</p>
+                        <img src="img/24-fiebre-dolor-garganta.png" alt="">
+                        <img src="img/25-fiebre-dificultad-respirar.png" alt="">
+                        <img src="img/23-fiebre-tos.png" alt="">
+                    </div>
+                </article>
+
+                <article class="article-right">
+
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded" id="formulario-test">
+
+                        <label for="nombre-apellido">Nombre Y Apellido
+                            <input type="text" class="input-right" name="nombre-apellido" id="nombre-apellido">
+                        </label>
+
+                        <div class="contenedor-dni-telefono">
+                            <label for="dni">Dni
+                                <input type="number" name="dni" id="dni" class="input-right">
+                                <!-- id hace referencia al for del label-->
+                            </label>
+
+                            <label for="telefono" id="texto-celular">Telefono
+                                <input type="number" name="telefono" id="celular" class="input-right">
+                            </label>
+
+                        </div>
+
+                        <div class="contenedor-ciudad-sexo">
+                            <label for="ciudad">Ciudad
+                                <input type="text" name="ciudad" id="ciudad" class="input-right">
+
+                            </label>
+
+                            <label for>Sexo
+                                <label for="masculino">M
+                                    <input type="radio" name="genero" id="masculino">
+                                </label>
+
+                                <label for="femenino">F
+
+                                    <input type="radio" name="genero" id="femenino">
+
+                                </label>
+
+                            </label>
+                        </div>
+
+                        <label for>Has viajado al exterior de la Republica Argentina?
+
+                            <label for="si-viaje">Si
+                                <input type="radio" name="viaje" id="si-viaje">
+                            </label>
+                            <label for="no-viaje">No
+                                <input type="radio" name="viaje" id="no-viaje">
+                            </label>
+                        </label>
+
+                        <div class="contenedor-paises">
+                            <label for "">Paises Visitados
+                                <datalist id="opciones">
+                                    <option value="Pais-1"></option>
+                                    <option value="Pais-2"></option>
+                                    <option value="Pais-3"></option>
+                                </datalist>
+                                <input type="text" list="opciones" id="opciones">
+
+                            </label>
+                        </div>
+
+                        <p class="titulo-sintomas">Porfavor, indica los sintomas que presentas:</p>
+
+
+                        <p>¿Tuviste Fiebre mayor a 38 grados?
+
+                            <label for="si-fiebre">Si
+                                <input type="radio" name="fiebre" id="si-fiebre">
+                            </label>
+                            <label for="no">No
+                                <input type="radio" name="fiebre" id="no-fiebre">
+                            </label>
+                        </p>
+
+
+
+
+
+                        <p>¿Tuviste dolor de cabeza?
+
+                            <label for="si-dolor">Si
+                                <input type="radio" name="dolor" id="si-dolor">
+                            </label>
+                            <label for="no-dolor">No
+                                <input type="radio" name="dolor" id="no-dolor">
+
+                            </label>
+                        </p>
+                        <p>¿Tuviste una tos persistente?
+
+                            <label for="si-tos">Si
+                                <input type="radio" name="tos" id="si-tos">
+                            </label>
+                            <label for="no-tos">No
+                                <input type="radio" name="tos" id="no-tos">
+                            </label>
+                        </p>
+                        <p>¿Tuviste Dolor de garganta?
+
+                            <label for="si-dolor-garganta">Si
+                                <input type="radio" name="dolor-garganta" id="si-dolor-garganta">
+                            </label>
+                            <label for="no-dolor-garganta">No
+                                <input type="radio" name="dolor-garganta" id="no-dolor-garganta">
+                            </label>
+                        </p>
+
+                        <p>¿Tuviste dificultad para respirar?
+
+                            <label for="si-dificultad">Si
+                                <input type="radio" name="dificultad-respirar" id="si-dificultad">
+                            </label>
+                            <label for="no-dificultad">No
+                                <input type="radio" name="dificultad-respirar" id="no-dificultad">
+                            </label>
+                        </p>
+
+                        <div class="contenedor-direccion-localidad">
+                            <label for="direccion">Direccion
+                                <input type="text" name="direccion" id="direccion">
+                            </label>
+                            <label for="ciudad">Localidad
+                                <input type="text" name="localidad" id="localidad">
+                            </label>
+
+                        </div>
+                        <div class="contenedor-enviar-test">
+                            <input type="button" value="Enviar Test" id="button-send">
+
+                        </div>
+                    </form>
+
+
+                </article>
+    
+           <!--Fijarme si tengo que crear un article o un section-->
+        
+        
+        </section>
+        
+        
+
+
+
+        <footer>
+            <div class="columna1">
+                <h4 id="subtitulo-izquierdo">Datos del Grupo:</h4>
+                <p>Dario Orfano- 41582343</p>
+                <p>Dana Kusiak - 38869694</p>
+            </div>
+            <div class="columna2">
+                <h4 id="subtitulo-central">Menu Inferior:</h4>
+                <nav class="menu-footer">
+                    <ul>
+                        <li><a href="enfermedades.html">Enfermedades</a></li>
+                        <li><a href="#">Vacunas</a></li>
+                        <li><a href="mapa_hospitales.html">Hospitales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="columna3">
+                <h4 id="subtitulo-derecho">Redes Sociales:</h4>
+
+                <div id="redes-sociales">
+                    <div class="link-facebook">
+                        <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+                    </div>
+
+                    <div class="link-twitter">
+                        <a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter"></a>
+                    </div>
+
+                    <div class="link-instagram">
+                        <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
