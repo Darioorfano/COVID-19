@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Frank+Ruhl+Libre&family=Merriweather:wght@900&family=Muli:ital,wght@0,200;0,400;1,800&family=Playfair+Display&family=Roboto&display=swap');
 /*Estilos pagina inicio*/
 
 * {
@@ -8,14 +9,20 @@
 body {
     font-family: "verdana";
     margin: 0 auto;
-    background-color: #C5CCD0;
+    /*background-color: #C5CCD0;*/
+    background-color: #B0D7FF;
+    
+    
+
+    
 }
 header {
-    background-color: #797E89;
+    background-color: #B0D7FF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 100px;
+    height: 150px;
+    
 }
 h1 {
     text-align: center;
@@ -23,6 +30,7 @@ h1 {
     color: #2D3142;
     font-size: 60px;
     padding-bottom: 30px;
+     font-family: 'Roboto', sans-serif;
 }
 footer {
     background-color: #2D3142;
@@ -69,6 +77,7 @@ footer {
 .menu-header {
     padding: 10px;
     height: 40px;
+    margin-top: 50px;
     width: 100%;
     background-color: #2D3142;
     display: flex;
@@ -86,6 +95,7 @@ footer {
 .menu-header a {
     text-decoration: none;
     color: #FAFFFD;
+    font-family: 'Open Sans', sans-serif;
 }
 .contenedor-slider {
     margin-top: 10px;
@@ -104,7 +114,8 @@ footer {
     padding-bottom: 100px;
 }
 .circulos {
-    background-color: #464B5A;
+    background-color: #2D3142;
+    /*background-color: #464B5A;*/
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -131,12 +142,14 @@ footer {
 }
 .links {
     text-decoration: none;
-    background-color: #464B5A;
+    background-color: #2D3142;
+    /*background-color: #464B5A;*/
     color: #FAFFFD;
     padding: 10px 50px 10px;
     border-radius: 5px;
     display: block;
     margin-top: 20px;
+    font-family: 'Merriweather', serif;
 }
 .franja-llamado {
     background-color: #1C1F32;
@@ -203,12 +216,15 @@ footer {
 
 #titulo-enfermedad {
     text-align: center;
+  background-color:#6bb0e6;
+ 
 }
 #contenedor-buscador-enfermedades {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    background-color:#6bb0e6;
 }
 .barra-de-busqueda {
     position: relative;
@@ -240,6 +256,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color:#6bb0e6;
 }
 
 /*Al utilizar flex, el article se transforma en padre para la img,p etc*/
@@ -287,12 +304,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background: red;
+    background-color:#6bb0e6;
 }
 #nombre-enfermedad {
     font-size: 25px;
     position: relative;
     bottom: 15px;
+    
 }
 .articulo {
     display: flex;
@@ -313,11 +331,13 @@ footer {
 }
 #titulo {
     font-size: 25px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
     text-align: center;
+     background-color:#72b6eb;
 }
 .contenedor-texto {
     width: 45%;
+    
 }
 .contenedor-texto p {
     margin: 20px 0;
@@ -331,12 +351,14 @@ se posicione a la derecha*/
 
 #contenedor-article {
     display: flex;
+     background-color:#72b6eb;
 }
 .article-left {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
+    font-family: 'Open Sans', sans-serif;
 }
 .article-right {
   
@@ -354,6 +376,7 @@ se posicione a la derecha*/
     flex-wrap: wrap;
     margin-left: 20px;
     padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 #nombre-apellido {
     width: 100%;
@@ -372,15 +395,17 @@ se posicione a la derecha*/
     height: 35px;
     border: 2px solid grey;
     border-radius: 10px;
-    width: 90%
+    width: 90%;
 }
 .contenedor-dni-telefono #celular {
     margin-left: 20px;
 }
 .contenedor-ciudad-sexo {
     display: flex;
-    margin: 20px 0;
-}
+    margin: 20px 0;  
+} 
+
+
 .contenedor-ciudad-sexo #ciudad {
     height: 30px;
     border-radius: 10px;
@@ -419,8 +444,77 @@ se posicione a la derecha*/
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
-    border: 2px solid grey;
+    border: 2px solid #2D3142;
+        color: #FAFFFD;
+     background-color: #2D3142;    
 }
+.section-precaucion{
+      display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 800px;
+    width: 100%;
+    background-color: #6bb0e6;
+}
+.section-precaucion p{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.imagen-precaucion img{
+    padding-left: 50px;
+    
+}
+
+.section-hospitales-cercanos{
+   height: 500px;
+     background-color: rgb(114, 182, 235);
+}
+ #titulo_seccion{
+    font-size: 20px;
+     text-align: center;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+#nombre-hospital{
+    font-size: 20px;
+}
+
+.articulo-hospital{
+    margin:170px 45% 3px 40px;
+}
+.articulo-hospital p{
+    margin-top: 10px;
+}
+.articulo-hospital img{
+    height: 120px;
+}
+
+.contenedor_mapa_cercano{
+    background: yellow;
+     width: 100%;
+    height: 100px;
+    margin-top: 140px;
+    margin-right: 30px;
+}
+#article-mapa{
+  width: 90%;
+    margin-right: 70px;
+}
+
+#article-mapa iframe{
+    width: 100%;
+    height: 300px;
+}
+
 
 /*Mapa*/
 
@@ -429,12 +523,13 @@ se posicione a la derecha*/
     text-align: center;
     padding: 40px;
     color: #FAFFFD;
-    /*color:#2D3142;*/
+     background-color: rgb(114, 182, 235);
 }
 .seccion-mapa {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+     background-color: rgb(114, 182, 235);
 }
 #contenedor-mapa {
     width: 100%;
@@ -444,6 +539,7 @@ se posicione a la derecha*/
     width: 100%;
     height: 600px;
 }
+
 
 /*Contacto*/
 
@@ -459,6 +555,8 @@ se posicione a la derecha*/
 }
 #titulo-contacto {
     padding-top: 30px;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
 }
 #contenedor-formulario .input {
     display: block;
@@ -496,6 +594,11 @@ se posicione a la derecha*/
     right: 500px;
     color: #2D3142;
 }
+
+#titulo-datos{
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+}
 #redes-sociales-contacto div {
     display: inline-block;
 }
@@ -503,10 +606,11 @@ se posicione a la derecha*/
     width: 50px;
 }
 #titulo-ubicacion {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     margin: 40px 0px 20px 0;
     color: #2D3142;
+    font-family: 'Roboto', sans-serif;
 }
 #contenedor-ubicacion {
     display: flex;
@@ -517,8 +621,10 @@ se posicione a la derecha*/
     width: 100%;
     height: 500px;
     margin-bottom: 50px;
+    margin-left: 10%;
 }
 #ubicacion iframe {
-    width: 100%;
+    width: 90%;
     height: 500px;
+    
 }
