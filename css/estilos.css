@@ -41,6 +41,9 @@ footer {
     align-items: center;
     color: #FAFFFD;
 }
+
+/*Home*/
+
 #logo {
     width: 200px;
     font-size: 40px;
@@ -212,6 +215,7 @@ footer {
     height: 50px;
 }
 
+
 /*Enfermedades*/
 
 #titulo-enfermedad {
@@ -251,7 +255,7 @@ footer {
 }
 .contenedor-listaEnfermedades {
     display: flex;
-    height: 1400px;
+    height: 1600px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -261,86 +265,93 @@ footer {
 
 /*Al utilizar flex, el article se transforma en padre para la img,p etc*/
 
+
 .articulos {
     display: flex;
-    width: 80%;
-    justify-content: center;
+    width: 50%;
 }
+.contenido-article{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 .articulos img {
+    margin-top: 20px;
     height: 200px;
-    width: 20%;
+    width: 40%;
     border-radius: 20px;
 }
+
 .informacion {
-    width: 30%;
-    margin-left: 30px;
+    width: 80%;
+    margin-left: 20px;
+ 
+ 
+        
     /*Utilizar color para diferenciarlo*/
 }
 .informacion .titulo-enfermedad {
-    padding: 10px 1px 20px 20px;
+    padding: 10px 1px 20px 0px;
     font-size: 30px;
 }
-.informacion p {
-    padding-left: 20px;
-}
+
 .informacion input {
     padding: 10px;
-    margin-top: 90px;
-    margin-left: 20px;
+  margin-top:10px;
     color: #FAFFFD;
     background-color: #2D3142;
     border: 2px solid #2D3142;
     border-radius: 10px;
-    width: 25%;
     cursor: pointer;
+    
 }
 
 /*Detalle de enfermedadaes*/
 
 .contenedor-enfermedad {
     display: flex;
-    height: 450px;
+    height: 400px;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-around;
-    align-items: center;
     background-color:#6bb0e6;
 }
 #nombre-enfermedad {
     font-size: 25px;
-    position: relative;
-    bottom: 15px;
+    margin-bottom: 10px;
     
 }
 .articulo {
     display: flex;
-    width: 80%;
+    width: 60%;
     justify-content: center;
-    position: relative;
-    bottom: 60px;
-    left: 30px;
+    margin: auto;
+   
 }
 .articulo img {
     height: 200px;
-    width: 20%;
-    border-radius: 20px;
-}
-.descripcion {
     width: 30%;
-    margin-left: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
+
+/*Titulo del formulario de test*/
 #titulo {
     font-size: 25px;
     padding-bottom: 10px;
     text-align: center;
      background-color:#72b6eb;
 }
+
 .contenedor-texto {
     width: 45%;
     
 }
 .contenedor-texto p {
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 #titulo-sintoma {
     padding-left: 20px;
@@ -422,9 +433,12 @@ se posicione a la derecha*/
     margin: 10px 0 20px 0;
 }
 .titulo-sintomas {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 5px 0;
+ 
 }
+
+
+
 .contenedor-direccion-localidad {
     margin-bottom: 10px;
     display: flex;
@@ -435,21 +449,19 @@ se posicione a la derecha*/
     border-radius: 10px;
     width: 90%;
 }
-.contenedor-enviar-test {
-    position: relative;
-    left: 400px;
-}
+
 #button-send {
     width: 20%;
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid #2D3142;
-        color: #FAFFFD;
-     background-color: #2D3142;    
+    color: #FAFFFD;
+    background-color: #2D3142;    
+    float:right;
 }
 .section-precaucion{
-      display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -543,56 +555,62 @@ se posicione a la derecha*/
 
 /*Contacto*/
 
+/*Article izquierdo Contacto*/
 #contenedor-contacto {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
+    margin-top: 1.5em;
 }
 #contacto {
-    padding-left: 20px;
-    width: 30%;
     color: #2D3142;
+    margin: auto;
+    width: 50%;
 }
+
 #titulo-contacto {
-    padding-top: 30px;
     font-family: 'Muli', sans-serif;
     font-size: 20px;
+    
+}
+#contenedor-formulario{
+    width: 50%;
+    margin: 0 auto;
 }
 #contenedor-formulario .input {
     display: block;
 }
 .input {
-    width: 90%;
     margin: 20px 0;
     height: 30px;
     border: 1px solid grey;
     border-radius: 5px;
+    width: 100%;
 }
 #contenedor-formulario textarea {
     border: 1px solid grey;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
 }
 #button {
     background-color: #2D3142;
     width: 15%;
     height: 30px;
+    margin-top: 10px;
     color: #FAFFFD;
     border: #3580D2;
     border-radius: 10px;
-    position: relative;
-    left: 80%;
+    float:right;
     cursor: pointer;
 }
 #button:hover {
     background-color: #464B5A;
     transition: 1s;
 }
+
+/* Article derecho Datos contacto*/
 #datos-contacto {
-    position: relative;
-    top: 40px;
-    right: 500px;
-    color: #2D3142;
+  width: 50%;
 }
 
 #titulo-datos{
@@ -605,6 +623,10 @@ se posicione a la derecha*/
 #redes-sociales-contacto div a img {
     width: 50px;
 }
+
+
+
+/*Seccion Ubicacion*/
 #titulo-ubicacion {
     font-size: 35px;
     text-align: center;
