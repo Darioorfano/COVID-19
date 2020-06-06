@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Frank+Ruhl+Libre&family=Merriweather:wght@900&family=Muli:ital,wght@0,200;0,400;1,800&family=Playfair+Display&family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Frank+Ruhl+Libre&family=Merriweather:wght@900&family=Muli:ital,wght@0,200;0,400;1,800&family=Playfair+Display&family=Roboto&display=swap');
+
 /*Estilos pagina inicio*/
 
 * {
@@ -11,10 +12,6 @@ body {
     margin: 0 auto;
     /*background-color: #C5CCD0;*/
     background-color: #B0D7FF;
-    
-    
-
-    
 }
 header {
     background-color: #B0D7FF;
@@ -22,7 +19,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 150px;
-    
 }
 h1 {
     text-align: center;
@@ -30,7 +26,7 @@ h1 {
     color: #2D3142;
     font-size: 60px;
     padding-bottom: 30px;
-     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 footer {
     background-color: #2D3142;
@@ -40,6 +36,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: #FAFFFD;
+
 }
 
 /*Home*/
@@ -53,14 +50,14 @@ footer {
     font-family: helvetica;
     color: #2D3142;
 }
-#buscador-header {
-    height: 50px;
-    width: 100%;
-}
 .contenedor-buscador {
     width: calc(100% - 200px);
     position: relative;
     padding: 10px;
+}
+#buscador-header {
+    height: 50px;
+    width: 100%;
 }
 .contenedor-boton {
     position: absolute;
@@ -76,6 +73,9 @@ footer {
 #lupa {
     font-size: 20px;
     color: #FAFFFD;
+}
+.button-responsive{
+    display: none;
 }
 .menu-header {
     padding: 10px;
@@ -135,7 +135,6 @@ footer {
     padding-left: 25px;
     padding-top: 20px;
     color: #FAFFFD;
-    ;
 }
 #gps {
     font-size: 80px;
@@ -164,7 +163,7 @@ footer {
     margin-bottom: 15px;
 }
 .contenedor-izquierdo {
-    margin-left: 100px;
+    margin: 0 auto;
 }
 #parrafo-1 {
     padding-top: 20px;
@@ -178,7 +177,7 @@ footer {
     color: #C5CCD0;
 }
 .contenedor-derecho {
-    margin-right: 120px;
+    margin: 0 auto;
 }
 #telefono {
     color: #C5CCD0;
@@ -196,6 +195,8 @@ footer {
 #subtitulo-central {
     padding-top: 25px;
 }
+
+
 .menu-footer li {
     list-style: none;
 }
@@ -203,450 +204,510 @@ footer {
     text-decoration: none;
     color: #FAFFFD;
 }
+.columna1,.columna2,.columna3 {
+   margin:auto;
+  
+}
 #redes-sociales {
     display: flex;
     padding-top: 5px;
 }
 #redes-sociales div {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 #redes-sociales div a img {
     width: 50px;
     height: 50px;
 }
 
-
-/*Enfermedades*/
-
-#titulo-enfermedad {
-    text-align: center;
-  background-color:#6bb0e6;
- 
-}
-#contenedor-buscador-enfermedades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    background-color:#6bb0e6;
-}
-.barra-de-busqueda {
-    position: relative;
-    height: 50px;
-    width: 50%;
-    left: 300px;
-}
-#buscador-enfermedades {
-    width: 100%;
-    height: 50px;
-    border: 2px solid grey;
-    border-radius: 10px;
-}
-.contenedor-icono {
-    position: relative;
-    right: 1100px;
-    height: 35px;
-    top: 10px;
-}
-#lupa-enfermedad {
-    font-size: 30px;
-    color: #797E89;
-    opacity: 0.3;
-}
-.contenedor-listaEnfermedades {
-    display: flex;
-    height: 1600px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color:#6bb0e6;
-}
-
-/*Al utilizar flex, el article se transforma en padre para la img,p etc*/
+/*Si hago primero la pagina pensada en pc empiezo desde resolucion de tablet, despues sigo con mobile, y luego superior a la resolucion estandar*/
 
 
-.articulos {
-    display: flex;
-    width: 50%;
+@media screen and (max-width:900px) {
+    #numero {
+        font-size: 4.5em;
+    }
+    #telefono {
+        font-size: 1.5em;
+    }
+    
+    .button-responsive{
+        display: none;
+    }
 }
-.contenido-article{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.articulos img {
-    margin-top: 20px;
-    height: 200px;
-    width: 40%;
-    border-radius: 20px;
-}
-
-.informacion {
-    width: 80%;
-    margin-left: 20px;
- 
- 
+    
+    @media screen and (max-width:500px) {
         
-    /*Utilizar color para diferenciarlo*/
-}
-.informacion .titulo-enfermedad {
-    padding: 10px 1px 20px 0px;
-    font-size: 30px;
-}
+        #logo {
+        text-align: center;
+        }
+        .contenedor-buscador {
+            display: none;
+        }
+        .button-responsive{ 
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 6em;
+            width:10%;
+            z-index: 2;
+            }
+        .button-responsive button{
+            background-color: #2D3142;
+            width: 100%;
+            height: 4em;
+        }
+        #icono-menu{
+            font-size: 2.5em;
+            color: #C5CCD0;
+        }
+        
+        .menu-header{
+       background-color: #B0D7FF;
+            padding-top: 2.5em;
+            /*Cuando haga Js habilitarlo(sacarle el display none)*/
+            display: none;
+        }
+        .menu-header ul{
+            display: flex;
+            flex-direction: column;
+            background-color: #2D3142;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            padding-bottom: 4em;
+            width: 100vw;
+            height: 40vh;
+        }
+        .menu-header li{
+         padding-top: 1em;
+        margin-bottom: 1em;   
+        border-bottom:2px solid #373d55;
+        }
+        .menu-header a{
+            font-size: 1.4em; 
+        }
+        
+        .contenedor-slider img {
+            width: 100%;
+            margin-top: 2em;
+            
+        }
+        .contenedor-central {
+            flex-direction: column;
+            align-items: center;
+        }
+        .contenedor-central article {
+            margin-bottom: 3em;
+        }
+        .franja-llamado {
+            flex-direction: column;
+        }
+        #parrafo-2 {
+            font-size: 2em;
+            margin-left: 2em;
+            margin-top: 0.5em;
+        }
+        #telefono {
+            font-size: 1em;
+        }
+     
 
-.informacion input {
-    padding: 10px;
-  margin-top:10px;
-    color: #FAFFFD;
-    background-color: #2D3142;
-    border: 2px solid #2D3142;
-    border-radius: 10px;
-    cursor: pointer;
+    .columna1,.columna2,.columna3 {
+        font-size: 1.2em;   
+         width: 80vw; 
+         margin-bottom: 0.5em; 
+        
+        }
+        
+        
+}
+        
+        
+        
+        /*Enfermedades*/
+        #titulo-enfermedad {
+            text-align: center;
+            background-color: #6bb0e6;
+        }
+        #contenedor-buscador-enfermedades {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            background-color: #6bb0e6;
+        }
+        .barra-de-busqueda {
+            position: relative;
+            height: 50px;
+            width: 50%;
+            left: 300px;
+        }
+        #buscador-enfermedades {
+            width: 100%;
+            height: 50px;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+        .contenedor-icono {
+            position: relative;
+            right: 1100px;
+            height: 35px;
+            top: 10px;
+        }
+        #lupa-enfermedad {
+            font-size: 30px;
+            color: #797E89;
+            opacity: 0.3;
+        }
+        .contenedor-listaEnfermedades {
+            display: flex;
+            height: 1600px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #6bb0e6;
+        }
+        /*Al utilizar flex, el article se transforma en padre para la img,p etc*/
+        .articulos {
+            display: flex;
+            width: 50%;
+        }
+        .contenido-article {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .articulos img {
+            margin-top: 20px;
+            height: 200px;
+            width: 40%;
+            border-radius: 20px;
+        }
+        .informacion {
+            width: 80%;
+            margin-left: 20px;
+            /*Utilizar color para diferenciarlo*/
+        }
+        .informacion .titulo-enfermedad {
+            padding: 10px 1px 20px 0px;
+            font-size: 30px;
+        }
+        .informacion input {
+            padding: 10px;
+            margin-top: 10px;
+            color: #FAFFFD;
+            background-color: #2D3142;
+            border: 2px solid #2D3142;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    @media screen and (max-width:900px){
     
 }
-
-/*Detalle de enfermedadaes*/
-
-.contenedor-enfermedad {
-    display: flex;
-    height: 400px;
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    background-color:#6bb0e6;
-}
-#nombre-enfermedad {
-    font-size: 25px;
-    margin-bottom: 10px;
-    
-}
-.articulo {
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    margin: auto;
-   
-}
-.articulo img {
-    height: 200px;
-    width: 30%;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-/*Titulo del formulario de test*/
-#titulo {
-    font-size: 25px;
-    padding-bottom: 10px;
-    text-align: center;
-     background-color:#72b6eb;
-}
-
-.contenedor-texto {
-    width: 45%;
-    
-}
-.contenedor-texto p {
-    margin: 20px 20px;
-}
-#titulo-sintoma {
-    padding-left: 20px;
-}
-
-/*Pongo display flex para que el articulo que se encuentra abajo,
+        /*Detalle de enfermedadaes*/
+        .contenedor-enfermedad {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #6bb0e6;
+        }
+        #nombre-enfermedad {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .articulo {
+            display: flex;
+            width: 60%;
+            justify-content: center;
+            margin: auto;
+        }
+        .articulo img {
+            height: 200px;
+            width: 30%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        /*Titulo del formulario de test*/
+        #titulo {
+            font-size: 25px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: #72b6eb;
+        }
+        .contenedor-texto {
+            width: 45%;
+        }
+        .contenedor-texto p {
+            margin: 20px 20px;
+        }
+        #titulo-sintoma {
+            padding-left: 20px;
+        }
+        /*Pongo display flex para que el articulo que se encuentra abajo,
 se posicione a la derecha*/
-
-#contenedor-article {
-    display: flex;
-     background-color:#72b6eb;
-}
-.article-left {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    font-family: 'Open Sans', sans-serif;
-}
-.article-right {
-  
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.article-right p {
-    margin: 20px 0;
-}
-.article-right form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-#nombre-apellido {
-    width: 100%;
-    height: 30px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-.contenedor-dni-telefono {
-    margin-top: 20px;
-    display: flex;
-    height: 60px;
-}
-.contenedor-dni-telefono input {
-    margin: 10px 0 0 5px;
-    height: 35px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    width: 90%;
-}
-.contenedor-dni-telefono #celular {
-    margin-left: 20px;
-}
-.contenedor-ciudad-sexo {
-    display: flex;
-    margin: 20px 0;  
-} 
-
-
-.contenedor-ciudad-sexo #ciudad {
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid grey;
-    width: 90%;
-}
-#opciones {
-    width: 50%;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid grey;
-}
-.contenedor-paises {
-    margin: 10px 0 20px 0;
-}
-.titulo-sintomas {
-    margin: 5px 0;
- 
-}
-
-
-
-.contenedor-direccion-localidad {
-    margin-bottom: 10px;
-    display: flex;
-}
-.contenedor-direccion-localidad input {
-    height: 30px;
-    border: 2px solid grey;
-    border-radius: 10px;
-    width: 90%;
-}
-
-#button-send {
-    width: 20%;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px solid #2D3142;
-    color: #FAFFFD;
-    background-color: #2D3142;    
-    float:right;
-}
-.section-precaucion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    height: 800px;
-    width: 100%;
-    background-color: #6bb0e6;
-}
-.section-precaucion p{
-    text-align: center;
-    font-size: 20px;
-    padding-top: 10px;
-}
-
-.imagen-precaucion img{
-    padding-left: 50px;
-    
-}
-
-.section-hospitales-cercanos{
-   height: 500px;
-     background-color: rgb(114, 182, 235);
-}
- #titulo_seccion{
-    font-size: 20px;
-     text-align: center;
-    
-}
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  
-}
-
-#nombre-hospital{
-    font-size: 20px;
-}
-
-.articulo-hospital{
-    margin:170px 45% 3px 40px;
-}
-.articulo-hospital p{
-    margin-top: 10px;
-}
-.articulo-hospital img{
-    height: 120px;
-}
-
-.contenedor_mapa_cercano{
-    background: yellow;
-     width: 100%;
-    height: 100px;
-    margin-top: 140px;
-    margin-right: 30px;
-}
-#article-mapa{
-  width: 90%;
-    margin-right: 70px;
-}
-
-#article-mapa iframe{
-    width: 100%;
-    height: 300px;
-}
-
-
-/*Mapa*/
-
-#titulo-mapa {
-    font-size: 25px;
-    text-align: center;
-    padding: 40px;
-    color: #FAFFFD;
-     background-color: rgb(114, 182, 235);
-}
-.seccion-mapa {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-     background-color: rgb(114, 182, 235);
-}
-#contenedor-mapa {
-    width: 100%;
-    margin-bottom: 50px;
-}
-#contenedor-mapa iframe {
-    width: 100%;
-    height: 600px;
-}
-
-
-/*Contacto*/
-
-/*Article izquierdo Contacto*/
-#contenedor-contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 1.5em;
-}
-#contacto {
-    color: #2D3142;
-    margin: auto;
-    width: 50%;
-}
-
-#titulo-contacto {
-    font-family: 'Muli', sans-serif;
-    font-size: 20px;
-    
-}
-#contenedor-formulario{
-    width: 50%;
-    margin: 0 auto;
-}
-#contenedor-formulario .input {
-    display: block;
-}
-.input {
-    margin: 20px 0;
-    height: 30px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    width: 100%;
-}
-#contenedor-formulario textarea {
-    border: 1px solid grey;
-    width: 100%;
-    border-radius: 10px;
-}
-#button {
-    background-color: #2D3142;
-    width: 15%;
-    height: 30px;
-    margin-top: 10px;
-    color: #FAFFFD;
-    border: #3580D2;
-    border-radius: 10px;
-    float:right;
-    cursor: pointer;
-}
-#button:hover {
-    background-color: #464B5A;
-    transition: 1s;
-}
-
-/* Article derecho Datos contacto*/
-#datos-contacto {
-  width: 50%;
-}
-
-#titulo-datos{
-    font-family: 'Muli', sans-serif;
-    font-size: 20px;
-}
-#redes-sociales-contacto div {
-    display: inline-block;
-}
-#redes-sociales-contacto div a img {
-    width: 50px;
-}
-
-
-
-/*Seccion Ubicacion*/
-#titulo-ubicacion {
-    font-size: 35px;
-    text-align: center;
-    margin: 40px 0px 20px 0;
-    color: #2D3142;
-    font-family: 'Roboto', sans-serif;
-}
-#contenedor-ubicacion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#ubicacion {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 50px;
-    margin-left: 10%;
-}
-#ubicacion iframe {
-    width: 90%;
-    height: 500px;
-    
-}
+        #contenedor-article {
+            display: flex;
+            background-color: #72b6eb;
+        }
+        .article-left {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .article-right {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .article-right p {
+            margin: 20px 0;
+        }
+        .article-right form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: 20px;
+            padding-left: 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #nombre-apellido {
+            width: 100%;
+            height: 30px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .contenedor-dni-telefono {
+            margin-top: 20px;
+            display: flex;
+            height: 60px;
+        }
+        .contenedor-dni-telefono input {
+            margin: 10px 0 0 5px;
+            height: 35px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            width: 90%;
+        }
+        .contenedor-dni-telefono #celular {
+            margin-left: 20px;
+        }
+        .contenedor-ciudad-sexo {
+            display: flex;
+            margin: 20px 0;
+        }
+        .contenedor-ciudad-sexo #ciudad {
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid grey;
+            width: 90%;
+        }
+        #opciones {
+            width: 50%;
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid grey;
+        }
+        .contenedor-paises {
+            margin: 10px 0 20px 0;
+        }
+        .titulo-sintomas {
+            margin: 5px 0;
+        }
+        .contenedor-direccion-localidad {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .contenedor-direccion-localidad input {
+            height: 30px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            width: 90%;
+        }
+        #button-send {
+            width: 20%;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 2px solid #2D3142;
+            color: #FAFFFD;
+            background-color: #2D3142;
+            float: right;
+        }
+        .section-precaucion {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            height: 800px;
+            width: 100%;
+            background-color: #6bb0e6;
+        }
+        .section-precaucion p {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .imagen-precaucion img {
+            padding-left: 50px;
+        }
+        .section-hospitales-cercanos {
+            height: 500px;
+            background-color: rgb(114, 182, 235);
+        }
+        #titulo_seccion {
+            font-size: 20px;
+            text-align: center;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #nombre-hospital {
+            font-size: 20px;
+        }
+        .articulo-hospital {
+            margin: 170px 45% 3px 40px;
+        }
+        .articulo-hospital p {
+            margin-top: 10px;
+        }
+        .articulo-hospital img {
+            height: 120px;
+        }
+        .contenedor_mapa_cercano {
+            background: yellow;
+            width: 100%;
+            height: 100px;
+            margin-top: 140px;
+            margin-right: 30px;
+        }
+        #article-mapa {
+            width: 90%;
+            margin-right: 70px;
+        }
+        #article-mapa iframe {
+            width: 100%;
+            height: 300px;
+        }
+        /*Mapa*/
+        #titulo-mapa {
+            font-size: 25px;
+            text-align: center;
+            padding: 40px;
+            color: #FAFFFD;
+            background-color: rgb(114, 182, 235);
+        }
+        .seccion-mapa {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(114, 182, 235);
+        }
+        #contenedor-mapa {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        #contenedor-mapa iframe {
+            width: 100%;
+            height: 600px;
+        }
+        /*Contacto*/
+        /*Article izquierdo Contacto*/
+        #contenedor-contacto {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 1.5em;
+        }
+        #contacto {
+            color: #2D3142;
+            margin: auto;
+            width: 50%;
+        }
+        #titulo-contacto {
+            font-family: 'Muli', sans-serif;
+            font-size: 20px;
+        }
+        #contenedor-formulario {
+            width: 50%;
+            margin: 0 auto;
+        }
+        #contenedor-formulario .input {
+            display: block;
+        }
+        .input {
+            margin: 20px 0;
+            height: 30px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 100%;
+        }
+        #contenedor-formulario textarea {
+            border: 1px solid grey;
+            width: 100%;
+            border-radius: 10px;
+        }
+        #button {
+            background-color: #2D3142;
+            width: 15%;
+            height: 30px;
+            margin-top: 10px;
+            color: #FAFFFD;
+            border: #3580D2;
+            border-radius: 10px;
+            float: right;
+            cursor: pointer;
+        }
+        #button:hover {
+            background-color: #464B5A;
+            transition: 1s;
+        }
+        /* Article derecho Datos contacto*/
+        #datos-contacto {
+            width: 50%;
+        }
+        #titulo-datos {
+            font-family: 'Muli', sans-serif;
+            font-size: 20px;
+        }
+        #redes-sociales-contacto div {
+            display: inline-block;
+        }
+        #redes-sociales-contacto div a img {
+            width: 50px;
+        }
+        /*Seccion Ubicacion*/
+        #titulo-ubicacion {
+            font-size: 35px;
+            text-align: center;
+            margin: 40px 0px 20px 0;
+            color: #2D3142;
+            font-family: 'Roboto', sans-serif;
+        }
+        #contenedor-ubicacion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #ubicacion {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 50px;
+            margin-left: 10%;
+        }
+        #ubicacion iframe {
+            width: 90%;
+            height: 500px;
+        }
