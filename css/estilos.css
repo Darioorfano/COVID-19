@@ -101,8 +101,9 @@
                    margin-top: 10px;
                }
                .contenedor-slider img {
-                   width: 100%;
-               }
+                   width: 100vw;
+                    height: 600px;             
+                }
                .contenedor-central {
                    display: flex;
                    flex-direction: row;
@@ -214,6 +215,7 @@
                    width: 50px;
                    height: 50px;
                }
+
                /*Si hago primero la pagina pensada en pc empiezo desde resolucion de tablet, despues sigo con mobile, y luego superior a la resolucion estandar*/
                /* @media*/
                
@@ -285,8 +287,7 @@
                        font-size: 1.4em;
                    }
                    .contenedor-slider img {
-                       width: 100%;
-                       margin-top: 2em;
+                       width: 100vw;
                    }
                    .contenedor-central {
                        flex-direction: column;
@@ -435,11 +436,24 @@
                        /*Cuando haga Js habilitarlo(sacarle el display none)*/
                        display: none;
                    }
-                   .articulos img {
-                       margin-right: 1em;
-                       width: 45%;
+                  
+                   #titulo-enfermedad{
+                       font-size: 10vw;
                    }
-               }
+                   .articulos img {
+                        margin: 2em auto ;
+                       width: 55%;
+                   }
+                   .contenido-article{
+                        flex-direction: column;
+                   } 
+                   .informacion{
+                       text-align: center;
+                   }
+                   .informacion input{
+                       width: 50vw;
+                   }
+}
                /*Detalle de enfermedadaes*/
                
                .contenedor-enfermedad {
@@ -582,7 +596,7 @@ se posicione a la derecha*/
                    flex-direction: row;
                    flex-wrap: nowrap;
                    justify-content: space-around;
-                   height: 800px;
+                
                    width: 100%;
                    background-color: #6bb0e6;
                }
@@ -595,7 +609,7 @@ se posicione a la derecha*/
                    padding-left: 50px;
                }
                .section-hospitales-cercanos {
-                   height: 500px;
+                  
                    background-color: rgb(114, 182, 235);
                }
                #titulo_seccion {
@@ -611,30 +625,32 @@ se posicione a la derecha*/
                    font-size: 20px;
                }
                .articulo-hospital {
-                   margin: 170px 45% 3px 40px;
-               }
+                    width: 35%;
+                   margin-left: 5%;
+                margin-top: 2%;
+                    }
                .articulo-hospital p {
-                   margin-top: 10px;
-               }
+                    margin-bottom: 10px;
+
+}
                .articulo-hospital img {
-                   height: 120px;
-               }
-               .contenedor_mapa_cercano {
-                   background: yellow;
-                   width: 100%;
-                   height: 100px;
-                   margin-top: 140px;
-                   margin-right: 30px;
-               }
+                     width:60%;
+                    height: 300px;
+                    margin: auto;
+}
+            
                #article-mapa {
-                   width: 90%;
-                   margin-right: 70px;
+                   width: 50%;
+                   margin: auto 0 0 0;
+                   
                }
                #article-mapa iframe {
                    width: 100%;
-                   height: 300px;
+                height: 300px;
+                 
                }
-               /* @media*/
+               
+                    /* @media*/
                
                @media screen and (max-width:60em) {
                    .articulo {
@@ -650,20 +666,61 @@ se posicione a la derecha*/
                    .article-right {
                        margin-right: 2em;
                    }
-                   .imagenes img {
-                       width: 30vw;
+                  
+                   
+                   .contenedor-texto{
+                     margin: auto;
+                       width: 100%; 
                    }
+                 
+                   
+                   .imagenes{
+                        display: flex;
+                       flex-direction: row;
+                        flex-wrap: wrap;
+                       width: 50vw;  
+                                          
+                   }
+                   .imagenes img {
+                       width:40vw;
+                       margin: auto;
+                   }
+                   
+                   
                    .Precaucion p {
                        font-size: 2em;
                    }
                    .imagen-precaucion img {
                        width: 30%;
                    }
-                   .contenedor_mapa_cercano {
+                   
+                   
+                   #titulo_seccion{
+                       padding: 1em;
+                   }
+                   .articulo-hospital{
+                       width: 50%;
+                        margin:2em;
+                       
+                   }
+                   .articulo-hospital img{
                        width: 100%;
                    }
-               }
-               @media screen and (max-width:47em) {
+                   #article-mapa{
+                       width: 90%;
+                     
+                
+                   }
+                   .contenedor_mapa_cercano {
+                        width: 80%; 
+                       margin:  2em auto;
+    
+                   }
+                              
+                    
+                   }
+            
+        @media screen and (max-width:47em) {
                     header {
                        background-color: #646f9b;
                        height: 150px;
@@ -687,8 +744,57 @@ se posicione a la derecha*/
                    .informacion {
                        margin: auto;
                    }
-                   /*Me quede aca*/
-               }
+            #contenedor-article{
+              flex-direction: column;
+                margin: auto;
+            }
+            #titulo{
+                font-size: 1.5em;
+            }
+            .article-left{
+                margin: auto;
+                
+            }
+            .article-left p{
+                font-size: 1.3em;
+            }
+            .article-right{
+                margin: 1em auto;
+            }    
+            
+        
+            #button-send{
+                width: 100%;
+                padding: 10px;
+            }
+            .Precaucion p{
+                font-size: 1.5em;
+            
+            }
+    
+            .imagen-precaucion{
+                display: flex;
+                flex-direction: column;
+            }
+            .imagen-precaucion img{
+                width: 70%;
+                margin: 1em auto;
+            }
+            .contenedor{
+                 flex-direction: column;
+            
+            }
+            .articulo-hospital{
+                margin: 1em auto;
+                
+            }
+           
+            #article-mapa{
+             margin: 1em auto 2em auto;   
+            }
+           
+            
+                }
                /*Mapa*/
                
                #titulo-mapa {
