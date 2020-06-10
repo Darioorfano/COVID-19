@@ -1027,3 +1027,18 @@ se posicione a la derecha*/
                        height: 25em;
                    }
                }
+        @media screen and (max-width:25em){
+            .button-responsive{
+                width: 15%;
+            }
+            .contenedor-buscador{
+                width: 70%;
+                margin: 2em 2em 2em auto; 
+            }
+            #datos-contacto{
+                width: 100vw;
+            }
+            #contenedor-formulario {
+                width: 80%;
+            }
+    }
