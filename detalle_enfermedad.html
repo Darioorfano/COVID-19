@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/all.css">
+    <script src="js/validacion-formulario.js"></script>
     <title>COVID-19 Detalles-Enfermedad</title>
 </head>
 
@@ -99,20 +100,20 @@
 
                 <article class="article-right">
 
-                    <form action="#" method="get" enctype="application/x-www-form-urlencoded" id="formulario-test">
+                    <form action="#"  method="get" enctype="application/x-www-form-urlencoded" id="formulario-test">
 
-                        <label for="nombre-apellido">Nombre Y Apellido
-                            <input type="text" class="input-right" name="nombre-apellido" id="nombre-apellido">
+                        <label for="nombre-apellido" >Nombre Y Apellido
+                            <input type="text" class="error" class="input-right" name="nombre-apellido" id="nombre-apellido" >
                         </label>
 
                         <div class="contenedor-dni-telefono">
                             <label for="dni">Dni
-                                <input type="text" name="dni" id="dni" class="input-right">
+                                <input type="text" name="dni" id="dni" class="error" class="input-right">
                                 <!-- id hace referencia al for del label-->
                             </label>
 
                             <label for="telefono" id="texto-celular">Telefono
-                                <input type="number" name="telefono" id="celular" class="input-right">
+                                <input type="number" name="telefono" id="celular" class="error" class="input-right">
                             </label>
 
                         </div>
@@ -141,23 +142,23 @@
                             </label>
                         </div>
 
-                        <label for>Has viajado al exterior de la Republica Argentina?
+                        <label for >Has viajado al exterior de la Republica Argentina?
 
                             <label for="si-viaje">Si
-                                <input type="radio" name="viaje" id="si-viaje">
+                                <input type="radio" name="viaje" id="si-viaje" >
                             </label>
                             <label for="no-viaje">No
-                                <input type="radio" name="viaje" id="no-viaje">
+                                <input type="radio" name="viaje" id="no-viaje" >
                             </label>
                         </label>
 
                         <div class="contenedor-paises">
                             <label for "">Paises Visitados
                                 <datalist id="opciones">
-                                    <select name="" id="opciones">Seleccione pais que ha visitado</select>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Peru">Peru</option>
-                                    <option value="Alemania">Alemania</option>
+                                    <select  id="opciones">Seleccione pais que ha visitado</select>
+                                    <option  value="Argentina">Argentina</option>
+                                    <option  value="Peru">Peru</option>
+                                    <option  value="Alemania">Alemania</option>
                                 </datalist>
                                 <input type="text" list="opciones" id="opciones">
 
@@ -167,7 +168,7 @@
                         <p class="titulo-sintomas">Porfavor, indica los sintomas que presentas:</p>
 
 
-                        <p>¿Tuviste Fiebre mayor a 38 grados?
+                        <p >¿Tuviste Fiebre mayor a 38 grados?
 
                             <label for="si-fiebre">Si
                                 <input type="radio" name="fiebre" id="si-fiebre">
@@ -234,9 +235,13 @@
 
                         </div>
                         <div class="contenedor-enviar-test">
-                            <input type="button" value="Enviar Test" id="button-send">
+                            <input type="button" value="Enviar Test" id="button-send" onclick="validacion()" onclick="validacionRadioButton()" >
 
                         </div>
+                    <!--Este div va a acumular los errores para luego mostrarlo-->
+                    <div id="mensaje" class="error">
+
+                    </div>
                     </form>
 
 
