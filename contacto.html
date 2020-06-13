@@ -58,15 +58,28 @@
 
                 <form action="#" method="get" enctype="application/x-www-form-urlencoded" id="contenedor-formulario">
                     <p id="titulo-contacto">CONTACTO</p>
-                    <input type="text" class="input">
-                    <input type="text" class="input">
-                    <input type="text" class="input">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    <input type="button" value="Enviar" id="button">
-                    </button>
-                </form>
-            </article>
+                    <input type="text" class="input" placeholder="Ingrese nombre y apellido" id="nombre_apellido">
+                    <div class="error" id="mensaje">
 
+                    </div>
+                    <input type="email" class="input" placeholder="Ingrese su email" id="campo_Email">
+                    <div class="error" id="mensaje1">
+
+                    </div>
+                    <input type="text" class="input" placeholder="Ingrese numero de telefono" id="campo_Telefono">
+                    <div class="error" id="mensaje2">
+
+                    </div>
+                    <textarea name="mensaje" id="consulta" cols="30" rows="10"placeholder="Escriba su consulta"></textarea>
+                    <div  id="mensaje3">
+
+                    </div>
+                    <input type="button" value="Enviar" id="button">
+                   
+                </form>
+               
+            </article>
+            
             <article id="datos-contacto">
                 <p id="titulo-datos">DATOS DE CONTACTO</p>
                 <p>Direccion:Av. Juan Bautista Alberdi 1233</p>

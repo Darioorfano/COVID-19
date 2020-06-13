@@ -226,6 +226,7 @@ function validacionFormulario(){
     }  
     
 }
+
 document.getElementById("button-send").addEventListener("click",validacionFormulario);
 
 
