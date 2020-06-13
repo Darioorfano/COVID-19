@@ -57,18 +57,20 @@ function validacionTelefono(){
     
     if(!expresionRegularTelefono.test(inputTelefono)){
         error=true; 
-      return false;
+      
     }else{
         mensajeExito+="<p>Felicitaciones el numero se ha ingresado con exito</p>"; 
-    
+      
     }
     
     if(error){
-        
+     
         return false;
     }
-    else{
+    else{  
+        
         mensaje.innerHTML=mensajeExito;
+        mensaje.style.color="green";
         return true;
     }
    
