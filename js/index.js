@@ -1,11 +1,12 @@
 
-function slidemenu(){ 
+/*function slidemenu(){ 
     var menu;
     var open;
     var button;
     menu=document.getElementById("menu");
     open=document.getElementsByClassName("open");
     principal=document.getElementById("principal");
+    
     if(menu.style.display=="" || menu.style.display=="none"){
         menu.style.display="inline-block";
         

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/all.css">
-    <script src="js/validacion-formulario.js"></script>
+    
     <title>COVID-19 Detalles-Enfermedad</title>
 </head>
 
@@ -103,17 +103,17 @@
                     <form action="#"  method="get" enctype="application/x-www-form-urlencoded" id="formulario-test">
 
                         <label for="nombre-apellido" >Nombre Y Apellido
-                            <input type="text" class="error" class="input-right" name="nombre-apellido" id="nombre-apellido" >
+                            <input type="text"  class="input-right" name="nombre-apellido" id="nombre-apellido" >
                         </label>
 
                         <div class="contenedor-dni-telefono">
                             <label for="dni">Dni
-                                <input type="text" name="dni" id="dni" class="error" class="input-right">
+                                <input type="text" name="dni" id="dni"  class="input-right">
                                 <!-- id hace referencia al for del label-->
                             </label>
 
                             <label for="telefono" id="texto-celular">Telefono
-                                <input type="number" name="telefono" id="celular" class="error" class="input-right">
+                                <input type="number" name="telefono" id="celular"  class="input-right">
                             </label>
 
                         </div>
@@ -152,10 +152,10 @@
                             </label>
                         </label>
 
-                        <div class="contenedor-paises">
+                        <div class="contenedor-paises" id="listado-paises" >
                             <label for "">Paises Visitados
                                 <datalist id="opciones">
-                                    <select  id="opciones">Seleccione pais que ha visitado</select>
+                                    <select  id="opciones1">Seleccione pais que ha visitado</select>
                                     <option  value="Argentina">Argentina</option>
                                     <option  value="Peru">Peru</option>
                                     <option  value="Alemania">Alemania</option>
@@ -171,10 +171,10 @@
                         <p >¿Tuviste Fiebre mayor a 38 grados?
 
                             <label for="si-fiebre">Si
-                                <input type="radio" name="fiebre" id="si-fiebre">
+                                <input type="radio" name="fiebre" id="si-fiebre" class="opcion_Fiebre" value="Si">
                             </label>
                             <label for="no">No
-                                <input type="radio" name="fiebre" id="no-fiebre">
+                                <input type="radio" name="fiebre" id="no-fiebre" class="opcion_Fiebre" value="No">
                             </label>
 
 
@@ -187,29 +187,29 @@
                         <p>¿Tuviste dolor de cabeza?
 
                             <label for="si-dolor">Si
-                                <input type="radio" name="dolor" id="si-dolor">
+                                <input type="radio" name="dolor-cabeza" id="si-dolor" value="Si">
                             </label>
                             <label for="no-dolor">No
-                                <input type="radio" name="dolor" id="no-dolor">
+                                <input type="radio" name="dolor-cabeza" id="no-dolor" value="No" >
 
                             </label>
                         </p>
                         <p>¿Tuviste una tos persistente?
 
                             <label for="si-tos">Si
-                                <input type="radio" name="tos" id="si-tos">
+                                <input type="radio" name="tos" id="si-tos" value="Si">
                             </label>
                             <label for="no-tos">No
-                                <input type="radio" name="tos" id="no-tos">
+                                <input type="radio" name="tos" id="no-tos" value="No">
                             </label>
                         </p>
                         <p>¿Tuviste Dolor de garganta?
 
                             <label for="si-dolor-garganta">Si
-                                <input type="radio" name="dolor-garganta" id="si-dolor-garganta">
+                                <input type="radio" name="dolor-garganta" id="si-dolor-garganta" value="Si">
                             </label>
                             <label for="no-dolor-garganta">No
-                                <input type="radio" name="dolor-garganta" id="no-dolor-garganta">
+                                <input type="radio" name="dolor-garganta" id="no-dolor-garganta" value="No">
                             </label>
                         </p>
 
@@ -217,25 +217,27 @@
 
 
                             <label for="si-dificultad">Si
-                                <input type="radio" name="dificultad-respirar" id="si-dificultad">
+                                <input type="radio" name="dificultad-respirar" id="si-dificultad" value="Si">
                             </label>
                             <label for="no-dificultad">No
-                                <input type="radio" name="dificultad-respirar" id="no-dificultad">
+                                <input type="radio" name="dificultad-respirar" id="no-dificultad" value="No">
                             </label>
 
                         </p>
 
                         <div class="contenedor-direccion-localidad">
+                            <div id="contenedor-direccion">
                             <label for="direccion">Direccion
                                 <input type="text" name="direccion" id="direccion">
                             </label>
+                            </div>
                             <label for="ciudad">Localidad
                                 <input type="text" name="localidad" id="localidad">
                             </label>
 
                         </div>
                         <div class="contenedor-enviar-test">
-                            <input type="button" value="Enviar Test" id="button-send" onclick="validacion()" onclick="validacionRadioButton()" >
+                            <input type="button" value="Enviar Test" id="button-send">
 
                         </div>
                     <!--Este div va a acumular los errores para luego mostrarlo-->
@@ -340,7 +342,7 @@
     </footer>
 
 
-
+    <script src="js/validacion-formulario.js"></script>
 </body>
 
 </html>
