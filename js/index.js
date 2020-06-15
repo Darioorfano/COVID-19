@@ -1,4 +1,15 @@
 
+$(document).ready(function(){
+$(".button-responsive").click(function(){
+
+    $(".menu-header").show();
+    
+
+});
+
+
+});
+
 /*function slidemenu(){ 
     var menu;
     var open;
