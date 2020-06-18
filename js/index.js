@@ -1,13 +1,11 @@
 
-$(document).ready(function(){
-$(".button-responsive").click(function(){
-
-    $(".menu-header").show();
-    
-
-});
-
-
+function nombre (){
+    $("#boton-responsive").click(function(){
+        $("#menu").show();
+        $("#menu").slideToggle();
+        alert("Cargado");
+    });
+   
 });
 
 /*function slidemenu(){ 

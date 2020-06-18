@@ -165,6 +165,7 @@ function validacionRadioButton( ){
     var paises=document.getElementById("listado-paises");
     
     if (opcion_Viaje_Si.checked){    
+        paises.style.display="flex";
         return true;
     }
     else if(opcion_Viaje_No.checked){
@@ -173,7 +174,7 @@ function validacionRadioButton( ){
     return true;
     }
 }
-
+document.getElementById("si-viaje").addEventListener("click",validacionRadioButton);
 document.getElementById("no-viaje").addEventListener("click",validacionRadioButton);
 
 function validacionCampoDificultadRespirar( ){
@@ -183,15 +184,16 @@ function validacionCampoDificultadRespirar( ){
     var direccion=document.getElementById("contenedor-direccion");
     
     if (opcion_Dificultad_Si.checked){    
-        
+        direccion.style.display="flex";
     }
     else if(opcion_Dificultad_No.checked){
         
         direccion.style.display="none";
+        return true;
     }
 }
 document.getElementById("no-dificultad").addEventListener("click",validacionCampoDificultadRespirar);
-
+document.getElementById("si-dificultad").addEventListener("click",validacionCampoDificultadRespirar);
 
 function validacionFormulario(){
     

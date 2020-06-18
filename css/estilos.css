@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Frank+Ruhl+Libre&family=Merriweather:wght@900&family=Muli:ital,wght@0,200;0,400;1,800&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 /*Estilos pagina inicio*/
 
 * {
@@ -409,6 +411,9 @@ footer {
 .articulos {
     display: flex;
     width: 50%;
+}
+.titulo-enfermedad{
+    font-family: 'Poppins', sans-serif;
 }
 .contenido-article {
     display: flex;
@@ -830,10 +835,24 @@ margin: 1em auto 2em auto;
 
 
  }
+
+ /*Vacunacion*/
+
+#titulo-vacunacion{
+font-size: 45px;
+}
+#calendar{
+    width: 80%;
+    margin:auto;
+
+}
+
+
+
 /*Mapa*/
 
 #titulo-mapa {
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     padding: 40px;
     color: #FAFFFD;

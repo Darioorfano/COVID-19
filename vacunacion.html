@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/estilos.css">
+
     <link rel="stylesheet" href="css/all.css">
-    <script src="js/index.js"></script>
-    <script  src="js/jquery.min.js"></script>
-    <title>COVID-19</title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/vacunacion.js"></script>
+    <script src="js/calendario.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <title>Vacunacion</title>
 </head>
 
 <body>
@@ -55,54 +61,13 @@
         </nav>
         
     </header>
-    
+    <h1 id="titulo-vacunacion">CALENDARIO DE VACUNACION</h1>
     <main>
-        
-        <section class="contenedor-slider">
-            <img src="img/slider.jpg" alt="foto-slider">
-        </section>
-        
-        
-        <h1>COVID-19</h1>
-        <section class="contenedor-central">
-            
-            <article class="enfermedades">
-                <div class="circulos">
-                    <a href="enfermedades.html"><i class="fas fa-viruses" id="enfermedades"></i></a>
-                </div>
-                <a href="enfermedades.html" class="links">ENFERMEDADES</a>
-                
-            </article>
-            
-            
-            
-            <article class="vacunas">
-                <div class="circulos">
-                    <i class="fas fa-syringe" id="jeringa"></i>
-                </div>
-                <a href="#" class="links" id="vacunas">VACUNAS</a>
-                
-            </article>
-            
-            <article class="mapa-hospitales">
-                <div class="circulos">
-                    <a href="mapa_hospitales.html"><i class="fas fa-map-marker-alt" id="gps"></i></a>
-                </div>
-                <a href="mapa_hospitales.html" class="links">MAPA DE HOSPITALES</a>
-            </article>
-            
-        </section>
-        <section class="franja-llamado">
-            <article class="contenedor-izquierdo">
-                <p id="parrafo-1">Si ten&eacute;s s&iacute;ntomas de COVID-19</p>
-                <p id="parrafo-2">LLAM&Aacute; AL</p>
-            </article>
-            
-            <article class="contenedor-derecho">
-                <p id="numero"><i class="fas fa-phone-alt " id="telefono"></i>148</p>
-            </article>
-        </section>
-        
+    <section>
+        <article id="calendar">
+         
+        </article>
+    </section>
     </main>
     
     <footer>
