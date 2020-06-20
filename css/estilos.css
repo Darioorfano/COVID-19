@@ -130,6 +130,7 @@ footer {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+    cursor: pointer;
 }
 #enfermedades {
     font-size: 80px;
