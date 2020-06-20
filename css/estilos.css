@@ -110,10 +110,10 @@ footer {
 }
 
 .contenedor-slider img {
-    width: 100%;
-    height: 600px;
-               
+    margin-top: 1em;
+
  }
+ 
 .contenedor-central {
     display: flex;
     flex-direction: row;
@@ -205,6 +205,9 @@ footer {
 .menu-footer li {
     list-style: none;
 }
+#text{
+    color: #B0D7FF;
+}
 .menu-footer a {
     text-decoration: none;
     color: #FAFFFD;
@@ -230,6 +233,10 @@ footer {
 /* @media*/
 
 @media screen and (max-width:60em) {
+   .contenedor-slider{
+       margin-top: 1.5em;
+   }
+   
     #numero {
         font-size: 4.5em;
     }
@@ -244,9 +251,13 @@ footer {
         padding: 0.6em;
         z-index: 1;
     }
-    
+    #text{
+        display: none;
+        color:#B0D7FF;
+    }
 }
 @media screen and (max-width:47em) {
+   
     header {
         background-color: #646f9b;  
     }
@@ -264,7 +275,7 @@ footer {
         display: flex;
         position: absolute;
         left: 0;
-        top: 7.1em;
+        top: 7.6em;
         width: 10%;
         z-index: 5;
     }
@@ -288,6 +299,11 @@ footer {
       display: flex;
     
       
+    }
+    #text{
+        display: none;
+        color: #B0D7FF;
+    
     }
     .menu-header ul {
         display: flex;
@@ -319,6 +335,7 @@ footer {
     }
     .contenedor-slider{
         background-color: #646f9b;
+        margin-top: 5em;
     }
     .contenedor-slider img {
         width: 100vw;
@@ -491,6 +508,7 @@ footer {
     .informacion input{
         width: 50vw;
     }
+   
 }
 /*Detalle de enfermedadaes*/
 
@@ -520,13 +538,17 @@ footer {
 /*Titulo del formulario de test*/
 
 #titulo {
-    font-size: 25px;
-    padding-bottom: 10px;
+    font-size: 35px;
+    padding-top: 1em;
+    padding-bottom: 2em;
     text-align: center;
     background-color: #72b6eb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 .contenedor-texto {
     width: 45%;
+
 }
 .contenedor-texto p {
     margin: 20px 20px;
@@ -640,8 +662,11 @@ se posicione a la derecha*/
 }
 .section-precaucion p {
     text-align: center;
-    font-size: 20px;
+    font-size: 2em;
+    font-weight: bolder;
     padding-top: 10px;
+    color: #FAFFFD;
+    margin: 1em 0;
 }
 .imagen-precaucion img {
     padding-left: 50px;
@@ -651,8 +676,10 @@ se posicione a la derecha*/
     background-color: rgb(114, 182, 235);
 }
 #titulo_seccion {
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: center;
+    padding-top: 2em;
+    font-weight:bolder;
 }
 .contenedor {
     display: flex;
@@ -844,8 +871,41 @@ font-size: 45px;
 #calendar{
     width: 80%;
     margin:auto;
-
+    background-color: #6bb0e6;
 }
+@media screen and (max-width: 60em){
+    #calendar{
+        width: 80%;
+    }
+    }
+@media screen and (max-width:47em){
+    #titulo-vacunacion{
+        font-size: 2.5em;
+    }
+    .seccion-calendario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    
+    .seccion-calendario,.fc-toolbar,.fc-header-toolbar{
+        flex-direction: column;
+        margin:2em 0;
+    }
+    .fc-left{
+        margin: 2em;
+    }
+    .fc-center{
+        margin: 2em;
+    } 
+    
+    #calendar{
+        width: 100%;
+    }
+ 
+}
+
+
 
 
 

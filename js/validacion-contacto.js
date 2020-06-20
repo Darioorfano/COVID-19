@@ -54,8 +54,8 @@ function validacionTelefono(){
     var error=false;
     var inputTelefono=document.getElementById("campo_Telefono").value;
     var expresionRegularTelefono=/^[0-9]{4}[-]{1}[0-9]{4}$/;
-    
-    if(!expresionRegularTelefono.test(inputTelefono)){
+    var expresionRegularTelefonoDos=/^[0-9]{4}[0-9]{4}$/;
+    if((!expresionRegularTelefono.test(inputTelefono)) && (!expresionRegularTelefonoDos.test(inputTelefono))){
         error=true; 
       
     }else{
@@ -88,9 +88,6 @@ function caracteresRestantes(){
     if(caracteresRestantes<=0){
         error=true;
         mensajeError+="<p>Lo sentimos ha llegado al limite  de caracteres</p>";
-        
-    }else{
-        
     }
     
     if(error){

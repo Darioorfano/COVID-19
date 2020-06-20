@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
     <link rel="stylesheet" href="css/all.css">
     <link href='fullcalendar/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-    <script src='fullcalendar/core/main.js'></script>
-    <script src='fullcalendar/daygrid/main.js'></script>
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/vacunacion.js"></script>
-    <script src="js/calendario.js"></script>
-    <script src="js/jquery.min.js"></script>
+   
+    
+    
+    <link rel="stylesheet" href="css/estilos.css"/>
+   
+    
     <title>Vacunacion</title>
 </head>
 
@@ -63,52 +63,62 @@
     </header>
     <h1 id="titulo-vacunacion">CALENDARIO DE VACUNACION</h1>
     <main>
-    <section>
-        <article id="calendar">
-         
-        </article>
-    </section>
-    </main>
-    
-    <footer>
-        <div class="columna1">
-            <h4 id="subtitulo-izquierdo">Datos del Grupo:</h4>
-            <p>Dario Orfano- 41582343</p>
-            <p>Dana Kusiak - 38869694</p>
-        </div>
-        <div class="columna2">
-            <h4 id="subtitulo-central">Menu Inferior:</h4>
-            <nav class="menu-footer">
-                <ul>
-                    <li><a href="enfermedades.html">Enfermedades</a></li>
-                    <li><a href="vacunacion.html">Vacunas</a></li>
-                    <li><a href="mapa_hospitales.html">Hospitales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-        <div class="columna3">
-            <h4 id="subtitulo-derecho">Redes Sociales:</h4>
-            
-            <div id="redes-sociales">
-                <div class="link-facebook">
-                    <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
-                </div>
-                
-                <div class="link-twitter">
-                    <a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter"></a>
-                </div>
-                
-                <div class="link-instagram">
-                    <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
-                </div>
-                
-                
-            </div>
-        </div>
-    </footer>
-    
-</body>
+        <section class="seccion-calendario">
+           <article id="calendar" class="fc fc-ltr fc-unthemed" style="">
 
-</html>
+           </article>
+                   
+                </section>
+            </main>
+            
+            <footer>
+                <div class="columna1">
+                    <h4 id="subtitulo-izquierdo">Datos del Grupo:</h4>
+                    <p>Dario Orfano- 41582343</p>
+                    <p>Dana Kusiak - 38869694</p>
+                </div>
+                <div class="columna2">
+                    <h4 id="subtitulo-central">Menu Inferior:</h4>
+                    <nav class="menu-footer">
+                        <ul>
+                            <li><a href="enfermedades.html">Enfermedades</a></li>
+                            <li><a href="vacunacion.html">Vacunas</a></li>
+                            <li><a href="mapa_hospitales.html">Hospitales</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="columna3">
+                    <h4 id="subtitulo-derecho">Redes Sociales:</h4>
+                    
+                    <div id="redes-sociales">
+                        <div class="link-facebook">
+                            <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+                        </div>
+                        
+                        <div class="link-twitter">
+                            <a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter"></a>
+                        </div>
+                        
+                        <div class="link-instagram">
+                            <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </footer>
+            <script src="js/calendario.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src='fullcalendar/timegrid/main.css'></script>
+    <script src='fullcalendar/timegrid/main.js'></script>
+    <script src="fullcalendar/list/main.css"></script>
+    <script src="fullcalendar/list/main.js"></script>
+    <!--Este script pone todo en español,incluyendo los botones de semana,dia,mes-->        
+    <script src="fullcalendar/core/locales-all.js"></script>
+</body>
+        
+        </html>

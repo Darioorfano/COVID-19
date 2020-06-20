@@ -122,6 +122,7 @@ hr.fc-divider {
   border-width: 1px;
   padding: 0;
   vertical-align: top;
+  
 }
 
 .fc td.fc-today {
@@ -218,7 +219,7 @@ temporary rendered events).
 .fc .fc-row .fc-mirror-skeleton td {
   /* see-through to the background below */
   /* extra precedence to prevent theme-provided backgrounds */
-  background: none;
+  background:none;
   /* in case <td>s are globally styled */
   border-color: transparent;
 }
@@ -563,7 +564,9 @@ TODO: more distinction between this file and common.css
 .fc-unthemed .fc-popover,
 .fc-unthemed .fc-list-view,
 .fc-unthemed .fc-list-heading td {
-  border-color: #ddd;
+  /*border-color: #ddd;*/
+  border-color:rgb(176, 215, 255);
+
 }
 
 .fc-unthemed .fc-popover {
@@ -577,7 +580,7 @@ TODO: more distinction between this file and common.css
 }
 
 .fc-unthemed td.fc-today {
-  background: #fcf8e3;
+  background: #266aad;
 }
 
 .fc-unthemed .fc-disabled-day {

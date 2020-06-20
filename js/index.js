@@ -1,35 +1,77 @@
 
-function nombre (){
-    $("#boton-responsive").click(function(){
-        $("#menu").show();
-        $("#menu").slideToggle();
-        alert("Cargado");
+ 
+    
+    $('#slider-fotos').nivoSlider({
+        effect:'random',
+
+        slices: 15,
+        
+        boxCols: 8,
+        
+        boxRows: 4,
+        
+        animSpeed: 200,
+        
+        pauseTime: 2500,
+        
+        startSlide: 0,
+        
+        directionNav:true,
+        
+        controlNav:true,
+        
+        controlNavThumbs:false,
+        
+        pauseOnHover:true,
+        
+        manualAdvance:false,
+        
+        prevText:'Prev',
+        
+        nextText:'Next',
+        
+        randomStart:false,
+        
+        beforeChange:function(){},
+        
+        afterChange:function(){},
+        
+        slideshowEnd:function(){},
+        
+        lastSlide:function(){},
+        
+        afterLoad:function(){}
+    
+    
     });
-   
+    
+
+/*$('#boton-responsive').click(function(){
+
+    $(".menu-header").show()
+        $(".menu-header").style.display="flex";
+     
+});
+$('boton-responsive').addEventListener("click",)
+$('#boton-responsive').click(function(){
+$(".menu-header").hide();
+});*/
+    
+    
+ 
+
+
+$("#boton-responsive").click(function(){
+    var menu=$("#menu");
+ if( menu.css("display")=="none" || menu.css("display")==""){
+        menu.css("display")=="flex";
+        menu.toogle();
+    }
+        else if(menu.css("display")=="flex" || menu.css("display")=="inline-block"){
+    menu.css("display")=="none";
+}
+    
 });
 
-/*function slidemenu(){ 
-    var menu;
-    var open;
-    var button;
-    menu=document.getElementById("menu");
-    open=document.getElementsByClassName("open");
-    principal=document.getElementById("principal");
-    
-    if(menu.style.display=="" || menu.style.display=="none"){
-        menu.style.display="inline-block";
-        
-    }
-    else{
-        menu.style.display="none";
-       menu.style.backgroundColor="#2D3142";
-       menu.style.position="relative";
-       menu.style.top="20%";
-      
-    }
-    
-    
-} 
-document.getElementById("boton-responsive").addEventListener("click",slidemenu);
 
-/*Fijarme porque desaparece el menu en resolucion de pc y acomodar un poco el contenido del menu*/
+
