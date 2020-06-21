@@ -42,11 +42,11 @@ function validacion(){
     var seleccionado=false;
     for(i in pregunta_Fiebre){
         if(pregunta_Fiebre[i].checked){
-     
-            if(pregunta_Fiebre[i].value=="Si") {
             
-            acumuladorTotal++;
-        }
+            if(pregunta_Fiebre[i].value=="Si") {
+                
+                acumuladorTotal++;
+            }
             seleccionado=true;
         }
     }
@@ -62,13 +62,13 @@ function validacion(){
     for(i in pregunta_Dolor_Cabeza){
         
         if(pregunta_Dolor_Cabeza[i].checked){
-        if(pregunta_Dolor_Cabeza[i].value=="Si"){
-
-            acumuladorTotal++;
-            
-        }
-        seleccionado=true;
-    }  
+            if(pregunta_Dolor_Cabeza[i].value=="Si"){
+                
+                acumuladorTotal++;
+                
+            }
+            seleccionado=true;
+        }  
     }
     if(!seleccionado){
         error=true;
@@ -80,13 +80,13 @@ function validacion(){
     for(i in pregunta_Tos){
         
         if(pregunta_Tos[i].checked){
-         if(pregunta_Tos[i].value=="Si"){
-
-            acumuladorTotal++; 
-            
-        }  
-        seleccionado=true;
-    }
+            if(pregunta_Tos[i].value=="Si"){
+                
+                acumuladorTotal++; 
+                
+            }  
+            seleccionado=true;
+        }
     }
     if(!seleccionado){
         error=true;
@@ -97,13 +97,13 @@ function validacion(){
     for(i in pregunta_Dolor_Garganta){
         
         if(pregunta_Dolor_Garganta[i].checked){ 
-        if(pregunta_Dolor_Garganta[i].value=="Si"){
-            acumuladorTotal++;
+            if(pregunta_Dolor_Garganta[i].value=="Si"){
+                acumuladorTotal++;
+                
+            }
             
-        }
-        
-        seleccionado=true;
-    }  
+            seleccionado=true;
+        }  
         
     }
     if(!seleccionado){
@@ -118,8 +118,8 @@ function validacion(){
         
         if(dificultad_Respirar[i].checked){
             if(dificultad_Respirar[i].value=="Si") { 
-           
-            acumuladorTotal++;
+                
+                acumuladorTotal++;
             }
             
             seleccionado=true;
@@ -171,7 +171,7 @@ function validacionRadioButton( ){
     else if(opcion_Viaje_No.checked){
         
         paises.style.display="none";
-    return true;
+        return true;
     }
 }
 document.getElementById("si-viaje").addEventListener("click",validacionRadioButton);

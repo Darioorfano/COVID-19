@@ -57,14 +57,14 @@ function validacionTelefono(){
     var expresionRegularTelefonoDos=/^[0-9]{4}[0-9]{4}$/;
     if((!expresionRegularTelefono.test(inputTelefono)) && (!expresionRegularTelefonoDos.test(inputTelefono))){
         error=true; 
-      
+        
     }else{
         mensajeExito+="<p>Felicitaciones el numero se ha ingresado con exito</p>"; 
-      
+        
     }
     
     if(error){
-     
+        
         return false;
     }
     else{  
@@ -73,7 +73,7 @@ function validacionTelefono(){
         mensaje.style.color="green";
         return true;
     }
-   
+    
 }
 document.getElementById("button").addEventListener("click",validacionTelefono);
 
@@ -99,4 +99,4 @@ function caracteresRestantes(){
         return true;
     }
 }
-    document.getElementById("consulta").addEventListener("keyup",caracteresRestantes);
+document.getElementById("consulta").addEventListener("keyup",caracteresRestantes);

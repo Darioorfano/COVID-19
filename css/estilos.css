@@ -37,7 +37,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: #FAFFFD;
-
+    
 }
 .error{
     color: crimson;
@@ -111,9 +111,9 @@ footer {
 
 .contenedor-slider img {
     margin-top: 1em;
+    
+}
 
- }
- 
 .contenedor-central {
     display: flex;
     flex-direction: row;
@@ -234,10 +234,10 @@ footer {
 /* @media*/
 
 @media screen and (max-width:60em) {
-   .contenedor-slider{
-       margin-top: 1.5em;
-   }
-   
+    .contenedor-slider{
+        margin-top: 1.5em;
+    }
+    
     #numero {
         font-size: 4.5em;
     }
@@ -258,9 +258,10 @@ footer {
     }
 }
 @media screen and (max-width:47em) {
-   
+    
     header {
         background-color: #646f9b;  
+        padding-bottom: 10.4em;
     }
     footer {
         background-color: #646f9b;
@@ -276,35 +277,39 @@ footer {
         display: flex;
         position: absolute;
         left: 0;
-        top: 7.6em;
         width: 10%;
-        z-index: 5;
+        z-index: 3;
     }
     .button-responsive button {
         background-color: #2D3142;
         width: 100%;
         height: 4em;
+        position: absolute;
+        top: 0;
+        
     }
     #icono-menu {
         font-size: 2.5em;
         color: #C5CCD0;
     }
-
+    
     #menu{
         display: none;
+        
     }
+    
     .menu-header {
         background-color: #646f9b;
-      z-index: 0;
-      padding:0;
-      display: flex;
-    
-      
+        z-index: 2;
+        padding:0;
+        display: flex;
+        
+        
     }
     #text{
         display: none;
         color: #B0D7FF;
-    
+        
     }
     .menu-header ul {
         display: flex;
@@ -317,9 +322,8 @@ footer {
         width: 100vw;
         height: 40vh;
         top:19%;
-        
         border-bottom: 2px solid #373d55;
-        
+        margin-top: 12em;
     }
     .menu-header li {
         padding-top: 1em;
@@ -477,7 +481,7 @@ footer {
 }
 @media screen and (max-width:47em) {
     
-     header {
+    header {
         background-color: #646f9b;
         height: 150px;
     }
@@ -488,20 +492,19 @@ footer {
         display: flex;
     }
     .menu-header {
-     
-   
+        
         display: none;
     }
-   
+    
     #titulo-enfermedad{
         font-size: 10vw;
     }
     .articulos img {
-         margin: 2em auto ;
+        margin: 2em auto ;
         width: 55%;
     }
     .contenido-article{
-         flex-direction: column;
+        flex-direction: column;
     } 
     .informacion{
         text-align: center;
@@ -509,7 +512,7 @@ footer {
     .informacion input{
         width: 50vw;
     }
-   
+    
 }
 /*Detalle de enfermedadaes*/
 
@@ -549,7 +552,7 @@ footer {
 }
 .contenedor-texto {
     width: 45%;
-
+    
 }
 .contenedor-texto p {
     margin: 20px 20px;
@@ -657,7 +660,7 @@ se posicione a la derecha*/
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
- 
+    
     width: 100%;
     background-color: #6bb0e6;
 }
@@ -673,7 +676,7 @@ se posicione a la derecha*/
     padding-left: 50px;
 }
 .section-hospitales-cercanos {
-   
+    
     background-color: rgb(114, 182, 235);
 }
 #titulo_seccion {
@@ -691,18 +694,18 @@ se posicione a la derecha*/
     font-size: 20px;
 }
 .articulo-hospital {
-     width: 35%;
+    width: 35%;
     margin-left: 5%;
- margin-top: 2%;
-     }
+    margin-top: 2%;
+}
 .articulo-hospital p {
-     margin-bottom: 10px;
-
+    margin-bottom: 10px;
+    
 }
 .articulo-hospital img {
-      width:60%;
-     height: 300px;
-     margin: auto;
+    width:60%;
+    height: 300px;
+    margin: auto;
 }
 
 #article-mapa {
@@ -712,13 +715,13 @@ se posicione a la derecha*/
 }
 #article-mapa iframe {
     width: 100%;
- height: 300px;
-  
+    height: 300px;
+    
 }
 
 
 
-     /* @media*/
+/* @media*/
 
 @media screen and (max-width:60em) {
     .articulo {
@@ -734,20 +737,20 @@ se posicione a la derecha*/
     .article-right {
         margin-right: 2em;
     }
-   
+    
     
     .contenedor-texto{
-      margin: auto;
+        margin: auto;
         width: 100%; 
     }
-  
+    
     
     .imagenes{
-         display: flex;
+        display: flex;
         flex-direction: row;
-         flex-wrap: wrap;
+        flex-wrap: wrap;
         width: 50vw;  
-                           
+        
     }
     .imagenes img {
         width:40vw;
@@ -768,7 +771,7 @@ se posicione a la derecha*/
     }
     .articulo-hospital{
         width: 50%;
-         margin:2em;
+        margin:2em;
         
     }
     .articulo-hospital img{
@@ -776,20 +779,20 @@ se posicione a la derecha*/
     }
     #article-mapa{
         width: 90%;
-      
- 
+        
+        
     }
     .contenedor_mapa_cercano {
-         width: 80%; 
+        width: 80%; 
         margin:  2em auto;
-
+        
     }
-               
-     
-    }
+    
+    
+}
 
 @media screen and (max-width:47em) {
-     header {
+    header {
         background-color: #646f9b;
         height: 150px;
     }
@@ -812,62 +815,62 @@ se posicione a la derecha*/
     .informacion {
         margin: auto;
     }
-#contenedor-article{
-flex-direction: column;
- margin: auto;
+    #contenedor-article{
+        flex-direction: column;
+        margin: auto;
+    }
+    #titulo{
+        font-size: 1.5em;
+    }
+    .article-left{
+        margin: auto;
+        
+    }
+    .article-left p{
+        font-size: 1.3em;
+    }
+    .article-right{
+        margin: 1em auto;
+    }    
+    
+    
+    #button-send{
+        width: 100%;
+        padding: 10px;
+    }
+    .Precaucion p{
+        font-size: 1.5em;
+        
+    }
+    
+    .imagen-precaucion{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-precaucion img{
+        width: 70%;
+        margin: 1em auto;
+    }
+    .contenedor{
+        flex-direction: column;
+        
+    }
+    .articulo-hospital{
+        margin: 1em auto;
+        
+    }
+    
+    #article-mapa{
+        margin: 1em auto 2em auto;   
+    }
+    
+    
 }
-#titulo{
- font-size: 1.5em;
-}
-.article-left{
- margin: auto;
- 
-}
-.article-left p{
- font-size: 1.3em;
-}
-.article-right{
- margin: 1em auto;
-}    
 
-
-#button-send{
- width: 100%;
- padding: 10px;
-}
-.Precaucion p{
- font-size: 1.5em;
-
-}
-
-.imagen-precaucion{
- display: flex;
- flex-direction: column;
-}
-.imagen-precaucion img{
- width: 70%;
- margin: 1em auto;
-}
-.contenedor{
-  flex-direction: column;
-
-}
-.articulo-hospital{
- margin: 1em auto;
- 
-}
-
-#article-mapa{
-margin: 1em auto 2em auto;   
-}
-
-
- }
-
- /*Vacunacion*/
+/*Vacunacion*/
 
 #titulo-vacunacion{
-font-size: 45px;
+    font-size: 45px;
 }
 #calendar{
     width: 80%;
@@ -878,7 +881,7 @@ font-size: 45px;
     #calendar{
         width: 80%;
     }
-    }
+}
 @media screen and (max-width:47em){
     #titulo-vacunacion{
         font-size: 2.5em;
@@ -903,7 +906,7 @@ font-size: 45px;
     #calendar{
         width: 100%;
     }
- 
+    
 }
 
 
@@ -933,6 +936,176 @@ font-size: 45px;
     width: 100%;
     height: 600px;
 }
+#contenedor-hospitales-disponibles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 4em;
+    
+}
+#anuncio{
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hospital1{
+    width:25%;
+    margin: auto 0 0 10%;
+    display: inline-block;
+    
+}
+#foto-hospital_italiano img{
+    width: 100%;
+}
+#hospital2{
+    width:21.5%;
+    margin: auto 5% 0 5%;
+    display: inline-block;
+    
+    
+}
+#foto-hospitalniño img{
+    width: 100%;
+}
+
+
+#hospital3{
+    width:21%;
+    margin: auto 5% 3% 0 5%;
+    display: inline-block;
+    
+    
+}
+#foto-buenpastor img{
+    width: 100%;
+    
+}
+#titulo-hospital1,#titulo-hospital2{
+    margin-top:1em;
+}
+
+#titulo-hospital3{
+    margin-top: 1em;
+}
+
+
+#titulo-hospital1,#titulo-hospital2,#titulo-hospital3{
+    text-align: center;
+}
+
+#boton-abrir{
+    width: 20%;
+    display: flex;
+    margin: 1em auto 10em auto;
+    padding:1% 0 ;
+    border-radius:1em;
+    background-color: #2D3142;
+    color: #FAFFFD;
+    cursor: pointer;
+}
+#contenedor_info_boton{
+    margin-bottom: 3em;
+}
+#boton-abrir2{
+    width: 20%;
+    display: flex;
+    margin: 1em auto;
+    padding:1.2%;
+    border-radius:1em;
+    background-color: #2D3142;
+    color: #FAFFFD;
+    cursor: pointer;
+}
+
+#boton-abrir3{
+    width: 20%;
+    display: flex;
+    margin: 1em auto;
+    padding:1.2%;
+    border-radius:1em;
+    background-color: #2D3142;
+    color: #FAFFFD;
+    cursor: pointer;
+}
+
+.abrir{
+    display:inline-block;
+    cursor:pointer;
+    margin: auto;
+}
+#popup1,#popup2,#popup3{
+    width: 50%;
+    height: 300px;
+    background-color: #3c4153;
+    color: #FAFFFD;
+    position: absolute;
+    top:12em;
+    right:25%;
+    
+}
+
+#popup1 h2{
+    text-align: center;
+}
+#popup1  p {
+    text-align: center;
+    
+}
+#popup2 h2{
+    text-align: center;
+}
+#popup2 p  {
+    text-align: center;
+}
+#popup3 h2{
+    text-align: center;
+}
+#popup3 p{
+    text-align: center;
+}
+
+#boton-cerrar1{
+    background-color: #606885;
+    width:20%;
+    border-radius: 10px;
+    border:2px solid #606885;
+    margin:1em auto;
+    padding:1%;
+    display:flex;
+    cursor: pointer;
+}
+.cerrar{
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+#boton-cerrar2{
+    
+    background-color: #606885;
+    width:20%;
+    border-radius: 10px;
+    border:2px solid #606885;
+    margin:1em auto;
+    padding:1%;
+    display:flex;
+    cursor: pointer;
+    
+}
+#boton-cerrar3{
+    background-color: #606885;
+    width:20%;
+    border-radius: 10px;
+    border:2px solid #606885;
+    margin:1em auto;
+    padding:1%;
+    display:flex;
+    cursor: pointer;
+}
+
+
 /*@media*/
 
 @media screen and (max-width:60em) {
@@ -942,10 +1115,61 @@ font-size: 45px;
     #contenedor-mapa iframe {
         height: 25em;
     }
-}
-@media screen and(max-width:47em) {
+
+    #hospital1{
+        width: 30%;
+        margin: 1em 0 auto 0.5em;
     
-     header {
+    }
+  
+    #foto-hospital_italiano img {
+        width: 100%;
+        
+    }
+
+    #hospital2{
+        width: 30%;
+        margin: auto 1.5em;
+    }
+    #hospital2 img{
+        width: 100%;
+        height: 159px;
+    }
+    #hospital3{
+        width: 30%;
+    }
+    #hospital3 img{
+        height: 159px;
+    }
+    #boton-abrir{
+        width: 50%;
+        padding:5%;
+    }
+    #boton-abrir2{
+        width: 50%;
+        padding:5%;
+    }
+    #boton-abrir3{
+        width: 50%;
+        padding:5%;
+    }
+    #boton-cerrar1{
+        width:50%;
+        padding:10px;
+    }
+    #boton-cerrar2{
+        width:50%;
+        padding:10px;
+    }
+    #boton-cerrar3{
+        width:50%;
+        padding:10px;
+    }
+
+}
+@media screen and (max-width:47em) {
+    
+    header {
         background-color: #646f9b;
         height: 150px;
     }
@@ -956,7 +1180,7 @@ font-size: 45px;
         display: flex;
         position: absolute;
         left: 0;
-        top: 6em;
+        top: 10em;
         width: 10%;
     }
     .button-responsive button {
@@ -993,6 +1217,53 @@ font-size: 45px;
     }
     .menu-header a {
         font-size: 1.4em;
+    }
+
+    .contenedor-hospitales-disponibles{
+      display: flex;
+        flex-direction: column;
+    
+
+    }
+    #hospital1,#hospital2,#hospital3{
+        margin: auto;
+    
+    }
+    #foto-hospitalniño img{
+        width: 100%;
+        height: 250px;
+    }
+    #foto-hospital_italiano img{
+        width: 100%;
+        height: 250px;
+    }
+    #foto-buenpastor img{
+        width: 100%;
+        height: 250px;
+    }
+    #boton-abrir{
+        width: 100%;
+        padding:10%;
+    }
+    #boton-abrir2{
+        width: 100%;
+        padding:10%;
+    }
+    #boton-abrir3{
+        width: 100%;
+        padding:10%;
+    }
+    #boton-cerrar1{
+        width:50%;
+        padding:10px;
+    }
+    #boton-cerrar2{
+        width:50%;
+        padding:10px;
+    }
+    #boton-cerrar3{
+        width:50%;
+        padding:10px;
     }
 }
 /*Contacto*/
@@ -1095,7 +1366,7 @@ font-size: 45px;
     
 }
 @media screen and (max-width:47em) {
-     header {
+    header {
         background-color: #646f9b;
         height: 150px;
         width: 100vw;
@@ -1129,7 +1400,7 @@ font-size: 45px;
         margin-bottom: 1em;
         font-weight: bolder;
         text-align: center;
-        }
+    }
     #datos-contacto p {
         font-size: 1.5em;
         text-align: center;
@@ -1151,17 +1422,17 @@ font-size: 45px;
     }
 }
 @media screen and (max-width:25em){
-.button-responsive{
- width: 15%;
-}
-.contenedor-buscador{
- width: 70%;
- margin: 2em 2em 2em auto; 
-}
-#datos-contacto{
- width: 100vw;
-}
-#contenedor-formulario {
- width: 80%;
-}
+    .button-responsive{
+        width: 15%;
+    }
+    .contenedor-buscador{
+        width: 70%;
+        margin: 2em 2em 2em auto; 
+    }
+    #datos-contacto{
+        width: 100vw;
+    }
+    #contenedor-formulario {
+        width: 80%;
+    }
 }
