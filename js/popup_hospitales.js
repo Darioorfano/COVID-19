@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#popup1").hide();
     $("#popup2").hide();
     $("#popup3").hide();
-   
+    
     /*Boton1*/    
     $("#boton-abrir").click(function(){
         
@@ -160,11 +160,6 @@ $(document).ready(function(){
             
             
         });
-        
-        
-        
-        
-        
         
         
     });

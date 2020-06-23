@@ -80,6 +80,9 @@ footer {
     font-size: 20px;
     color: #FAFFFD;
 }
+#menu-responsive{
+    display: none;
+}
 .button-responsive {
     display: none;
 }
@@ -278,14 +281,16 @@ footer {
         position: absolute;
         left: 0;
         width: 10%;
-        z-index: 3;
+        
+        
+        
     }
     .button-responsive button {
         background-color: #2D3142;
         width: 100%;
         height: 4em;
         position: absolute;
-        top: 0;
+        z-index: 3;
         
     }
     #icono-menu {
@@ -293,57 +298,48 @@ footer {
         color: #C5CCD0;
     }
     
-    #menu{
-        display: none;
+    #menu-responsive{
+        display: flex;
+        position: absolute;
+        top: 3em;
+        width: 100vw;
+        background-color: #2D3142;
+        z-index: 2;
+        height: 36em;
         
     }
     
-    .menu-header {
-        background-color: #646f9b;
-        z-index: 2;
-        padding:0;
-        display: flex;
-        
-        
+    #menu-responsive li{
+        display:flex;
+        list-style:none;
+        padding: 1em;
+        border-bottom: 2px solid#414761;
+        width: 100vw;
     }
+    #menu-responsive a{
+        margin: 1em auto;
+        text-decoration: none;
+    color: #FAFFFD;
+    font-family: 'Open Sans', sans-serif;
+font-size: 1.6em;
+
+}
+    
+    
+   
     #text{
         display: none;
-        color: #B0D7FF;
-        
+           color: #B0D7FF;    
     }
-    .menu-header ul {
-        display: flex;
-        flex-direction: column;
-        background-color: #2D3142;
-        z-index: 6;
-        position: absolute;
-        left: 0;
-        padding-bottom: 4em;
-        width: 100vw;
-        height: 40vh;
-        top:19%;
-        border-bottom: 2px solid #373d55;
-        margin-top: 12em;
-    }
-    .menu-header li {
-        padding-top: 1em;
-        margin-bottom: 1em;
-        border-bottom: 2px solid #373d55;
-        
-    }
-    .menu-header a {
-        font-size: 1.4em;
-        
-    }
-    .menu-open{
-        margin-left: 0;
-    }
+    
     .contenedor-slider{
         background-color: #646f9b;
         margin-top: 5em;
+        z-index: 1;
     }
     .contenedor-slider img {
         width: 100vw;
+        
         
     }
     .contenedor-central {
@@ -491,6 +487,8 @@ footer {
     .button-responsive {
         display: flex;
     }
+
+    
     .menu-header {
         
         display: none;
