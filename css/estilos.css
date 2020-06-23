@@ -499,7 +499,7 @@ font-size: 1.6em;
     }
     .articulos img {
         margin: 2em auto ;
-        width: 55%;
+        width: 70vw;
     }
     .contenido-article{
         flex-direction: column;
@@ -797,8 +797,9 @@ se posicione a la derecha*/
     footer {
         background-color: #646f9b;
     }
-    
-    
+    #boton-responsive{
+        width: 15vw;
+    }
     #nombre-enfermedad {
         font-size: 3em;
     }
@@ -808,7 +809,7 @@ se posicione a la derecha*/
     }
     .articulo img {
         margin: 1em auto;
-        width: 60%;
+        width: 70vw;
     }
     .informacion {
         margin: auto;
@@ -1174,6 +1175,9 @@ se posicione a la derecha*/
     footer {
         background-color: #646f9b;
     }
+    #titulo-mapa{
+        padding: 2em;
+    }
     .button-responsive {
         display: flex;
         position: absolute;
@@ -1224,7 +1228,8 @@ se posicione a la derecha*/
 
     }
     #hospital1,#hospital2,#hospital3{
-        margin: auto;
+        margin: 0 auto;
+        width:50vw;
     
     }
     #foto-hospitalniño img{
@@ -1241,15 +1246,15 @@ se posicione a la derecha*/
     }
     #boton-abrir{
         width: 100%;
-        padding:10%;
+        
     }
     #boton-abrir2{
         width: 100%;
-        padding:10%;
+        
     }
     #boton-abrir3{
         width: 100%;
-        padding:10%;
+    
     }
     #boton-cerrar1{
         width:50%;
